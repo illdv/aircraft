@@ -1,0 +1,927 @@
+error<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!--   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aircraft</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.2/css/mdb.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/needim/noty/77268c46/lib/noty.css"> -->
+
+  
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Aircraft</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.2/css/mdb.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/needim/noty/77268c46/lib/noty.css">
+	  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="/font/fonts.css"> -->
+</head>
+
+
+<body>
+  <div class="mainСontent">
+      <div class="container">
+        <div id="counter">
+          <div class="counterText">
+            <div class="row">
+              <div id="icoStartTitle" class="col-sm-12">
+                ICO STARTS
+              </div>
+              <div id="icoStartCounter" class="col-sm-12">
+                12:24:23
+              </div>
+            </div>   
+            <div class="row">
+              <div class="col-6">
+                <div class="process-text-start">
+                  $1,000,000
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="process-text-finish">
+                  $45,000,000
+                </div>
+              </div>
+            </div>
+
+            <div id="icoProgress">
+              <div id="finishProgress"></div>
+            </div>
+
+            <div class="smartContractLink">
+              <a href="index.html#">Smart-Contract</a>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <div class="row">
+              <div class="col social-link">
+                <a href="index.html#"><img src="images/bitcointalk-01.svg"></a>
+              </div>
+              <div class="col social-link">
+                <a href="index.html#"><img src="images/twitter-01.svg"></a>
+              </div>
+              <div class="col social-link">
+                <a href="index.html#"><img src="images/telegram-01.svg"></a>
+              </div>
+              <div class="col social-link">
+                <a href="index.html#"><img src="images/facebook-01.svg"></a>
+              </div>
+              <div class="col social-link">
+                <a href="index.html#"><img src="images/e-mail-01.svg"></a>
+              </div>
+            </div>
+          </div>
+
+          <div id="joinBtn">
+            <a class="join-action-btn" data-toggle="modal" data-target="#joinmodal">JOIN</a>     
+          </div>
+
+
+        </div>
+        <!-- ./counter -->
+
+      </div>
+      <!-- ./container -->
+      <header class="header">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar">
+          <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html#"><img id="logo" src="images/logo.png"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- button end -->
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#whitepeaper-section-link">WP</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#features-section-link">Features</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#ico-section-link">ICO</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#roadmap-section-link">Roadmap</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#team-section-link">Team</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#">ENG</a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+          <!-- container end -->
+
+        </nav>
+        <!-- nav end -->
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+
+            <div class="carousel-item" style="background-image: url('images/head1.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('images/head2.png')">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+
+<!--             <div class="carousel-item" style="background-image: url('images/head3.png')">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url('images/head4.png')">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div> -->
+
+            <div class="carousel-item active videoitem">
+              <div class="carousel-caption d-none d-md-block">
+                <video autoplay loop poster="images/poster.png">
+                  <source src="images/bg2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+          </div>
+          <a class="carousel-control-prev" href="index.html#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="index.html#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+       
+      </header>
+      <!-- /.header-mobile -->
+
+
+      <!-- wp part -->
+
+      <section class="wpSection" id="whitepeaper-section-link">
+        <div class="container">
+
+          <div class="row">
+            <!-- btn wp -->
+            <div class="wp-buttons col-lg-6 col-12">
+              <div class="wpbtn col-sm-12">
+                White Paper
+              </div>
+              <div class="wpbtn col-sm-12">
+                One pager
+              </div>
+              <div class="wpbtn col-sm-12">
+                Demo Platform
+              </div>     
+
+              <div id="planeImgWp">
+                <img src="images/plane.png">
+              </div>                       
+            </div>
+
+            <div class="wptext col-lg-6 col-12">
+                <p>
+                  <span class="textBold">AirCraft Company</span> is a high-level company, which united for one mission of connecting the world and giving the tourism the crypocurrency power."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate veli.
+                </p>
+            </div>
+          </div>
+
+        </div>
+        <!-- end wp section -->
+      </section>
+
+      <!-- news section -->
+      <section class="newsSection">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <h2 class="title">- News</h2>
+            </div>
+            <div class="bigSmbl col-sm-6">
+              News
+            </div>
+          </div>
+
+          <!-- articles -->
+          <div class="row articles">
+            <div class="article col-12 col-lg-4">
+              <h3>Name of article</h3>
+              <p>Hello this ois the text about the article the first sentencses I don’t know what i|m texting</p> 
+              <hr>
+              <a href="index.html#"><p>Learn more ></p></a>
+            </div>
+
+            <div class="article col-12 col-lg-4">
+              <h3>Name of article</h3>
+              <p>Hello this ois the text about the article the first sentencses I don’t know what i|m texting</p> 
+              <hr>
+              <a href="index.html#"><p>Learn more ></p></a>
+            </div>
+
+            <div class="article col-12 col-lg-4">
+              <h3>Name of article</h3>
+              <p>Hello this ois the text about the article the first sentencses I don’t know what i|m texting</p> 
+              <hr>
+              <a href="index.html#"><p>Learn more ></p></a>
+            </div>
+            <!-- articles end -->
+          </div>
+
+          <!-- links -->
+          <div class="row">
+            <div class="newsContent col-sm-12">
+            </div>
+          </div>
+
+        </div>
+        <!-- end news section -->
+      </section>
+
+      <section class="featuresSection" id="features-section-link">
+        <div class="container">
+
+          <!-- titles -->
+          <div class="row">
+            <div class="col-sm-6">
+              <h2 class="title ">- Features</h2>
+            </div>
+            <div class="bigSmbl  col-sm-6">
+              Features
+            </div>
+          </div>
+
+
+          <!-- first gif -->
+          <div class="row features-gif-block align-self-center justify-content-center">
+
+            <div class="mx-auto featuresCenter-mobile">
+              <img src="images/alltogether23.gif" loop=infinite>
+            </div>
+
+            <div class="featuresLeft col-6 col-lg-4">
+              <h4>Flights</h4>
+              <p>The fastest and the most comfortsble way to travel by plane.lExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt est laborum</p>
+              <h4>Cars</h4>
+              <p>Lorem ipsum lopem ifpgg lotem blog and ouh. hello, polum, strong. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui deserunt est laborum.</p>     
+            </div>
+
+            <div class="featuresCenter1 col-4 col-lg-4 gif">
+              <img src="images/alltogether23.gif" loop=infinite>
+            </div>
+
+            <div class="featuresRight col-6 col-lg-4">
+              <h4>Hotels</h4>
+              <p>The fastest and the most comfortsble way to travel by plane.lExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt est laborum</p>
+              <h4>Events</h4>
+              <p>Lorem ipsum lopem ifpgg lotem blog and ouh. hello, polum, strong. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui deserunt est laborum.</p>  
+            </div>
+          </div>
+
+
+          <!-- ship -->
+          <div class="row ship align-items-center">
+            <div class="col-8 col-lg-8">
+              <h4>Ferry & Cruise Ship</h4>
+              <p>We offer best prices on ferries and cruise ships in the North Eupore, in the Mediterrenian sea, in and around Asia. Enjoy piqturesque views from your comfortable cabin, taste meals in restorans and just relax during the vacation. lExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt est laborum. </p>
+            </div>
+  
+            <div class="col-4 col-lg-4">
+              <img src="images/ship.png">
+            </div>
+          </div>
+
+
+          <!-- insurancce -->
+          <div class="row ship align-items-center">
+            <div class="col-4 col-lg-4">
+              <img src="images/insurancce.png">
+            </div>
+
+            <div class="col-lg-8 col-8">
+              <h4>Insurance</h4>
+              <p>
+               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut.
+              </p>
+            </div>
+          </div>
+
+          <!-- aircraft token -->
+          <div class="row ship align-items-center">
+            <div class="aircraftToken col-sm-6">
+              <h4>AirCraft Token</h4>
+              <p>
+                AirCraft tokens are working like a coin-shield for payment system, that protect your wallets information and transactions. More than 5+ currencies are available for exchangeSpend anywhere you are going. 
+              </p>
+            </div>
+
+            <div class="aircraftToken col-sm-6">
+              <p>
+               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt est laborum.lExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt est laborum. More than 5+ currencies are available for exchangeSpend anywhere you are going.
+              </p>
+            </div>
+          </div>
+
+
+          <!-- container-end -->
+        </div>
+
+        <div class="coinflow container-fluid justify-content-center">
+          <img src="images/coinflow233.gif" >
+        </div>
+        
+        <!-- end features section -->
+      </section>
+
+      <section class="offerSection">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="offerCol col-12 col-lg-6">
+              <h4>The best offers</h4>
+              <p>
+                The best price offers depend on choosen currency or more complex travel offers on the site, which were compiled by our best travel agents. 
+              </p>  
+              <p>
+                Every client will get the advanture he desire.
+              </p>
+              <p>
+                If you need a full escort of your trip, you will be assigned a personal agent who will monitor the safety and high maintenance during your journey. 
+              </p>
+            </div>
+            
+            <div class="offerImgSafary col-12 col-lg-6">
+              <img src="images/safary.png">
+
+<!--               <div class="giftOffer">
+                <img src="images/gift.png">
+              </div> -->
+              <div class="demo-platform-div">
+                <a href="index.html#" class="demoPltformBtn ">
+                  Demo Platform
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-6">
+                <div id="iphonex3">
+                  <img width="316px" src="images/iphone-x-3-.png">
+                </div>
+                <div id="xiomi">
+                  <img width="130px" src="images/xiaomi-mi-band------.png">
+                </div>
+              </div> 
+
+              <div class="airapp col-12 col-lg-6">
+                <h4>
+                  AirCraft App 
+                </h4>
+                <p>
+                  AirCraft Application is a complex app which is consist of wallet to make payments in the system and the search app to find the best offers for tourism from out site. 
+                </p>
+                <p>
+                  The app is securied with 2-factor authentication for dashboard and transactions. 
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-12">
+              <h4>
+                AirCraft Payment Bracelets
+              </h4>
+              <p>
+                This payment bracelet is equipped with NFC-module, which provide the payments in the system. The bracelet is connected to your app and allows you to pay for services on our resorts. 
+              </p>
+              <p>
+                This braclelet will be given to the VIP clients of the AirCraft platform during their stay in our 5-stars partners-hotels. 
+              </p>
+            </div>
+
+
+          
+        </div>
+          <div class="joinBtnBack">
+            <div id="joinBtn2">
+              <a href="index.html#" class="join-action-btn" data-toggle="modal" data-target="#joinmodal">JOIN</a>     
+            </div>
+          </div>
+
+      </section>
+
+              
+
+      <section class="icoSection" id="ico-section-link">
+        <div class="container">
+          <div class="icotitle row align-items-center">
+            <div class="col-12 col-lg-3">
+              <h2 class="title">- ICO</h2>
+            </div>
+            <div class="col-12 col-lg-9">
+              <p>
+                The ICO is the most convenient and fair way to spread currency in the world, attract audience interest & attention, organize a cohesive community of user investors, whose goal is to improve the service and its prosperity.
+              </p>
+            </div>
+          </div> 
+          <div class="bigSmblIco">
+            ICO
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-12 titleIco">
+              <h2>ICO Details</h2>
+            </div>
+  
+
+            <div class="col-6 col-lg-6 icoTable">
+              <table>
+                <tr>
+                  <th>Start</th>
+                  <td>March 15 13:00 UTC</td>
+                </tr>
+                <tr>
+                  <th>End</th>
+                  <td>April 15 13:00 UTC</td>
+                </tr>
+                <tr>
+                  <th>Soft Cup</th>
+                  <td>$10.000.000 </td>
+                </tr>
+                <tr>
+                  <th>Hard Cup</th>
+                  <td>$10.000.000 </td>
+                </tr> 
+                <tr>
+                  <th>Hard Cup</th>
+                  <td>$10.000.000 </td>
+                </tr>
+                <tr>
+                  <th>Hard Cup</th>
+                  <td>$10.000.000 </td>
+                </tr>                
+              </table>
+            </div>
+
+            <div class="ico-details-img col-6 col-lg-6">
+              <img src="images/money.png">
+            </div>
+          </div>
+
+          <div class="ico-details-midle-title">
+            <h3>ICO Bonuses</h3>
+          </div>
+
+          <div class="ico-details-content">
+          </div>
+        </div>
+      </section>
+        <!-- end ico section -->
+
+      <section class="advantages">
+        <div class="container">
+          <h2 class="title">- Advantages</h2>
+          <div class="bigSmblAdv">
+            Advantages
+          </div>
+
+          <div class="row advantages-for-who">
+
+            <div class="col-12 col-lg-4 forblock-wrap">
+              <div class="forblock">
+                
+                <h4>for clients</h4>
+                <ul>
+                  <li>- A convenient platform to find the best flight, hotel and entertainment</li>
+                  <li>- Secure money settlement system</li>
+                  <li>- Full protection of the personal data of the traveler</li>
+                  <li>- Calculation of bonus miles for spent tokens</li>
+                  <li>- Multifunctional mobile application - an indispensable travel assistant</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4 forblock-wrap">
+              <div class="forblock">
+                <h4>for investors</h4>
+                <ul>
+                  <li>- A convenient platform to find the best flight, hotel and entertainment</li>
+                  <li>- Secure money settlement system</li>
+                  <li>- Full protection of the personal data of the traveler</li>
+                  <li>- Calculation of bonus miles for spent tokens</li>
+                  <li>- Multifunctional mobile application - an indispensable travel assistant</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4 forblock-wrap">
+              <div class="forblock">  
+                <h4>for partners</h4>
+                <ul>
+                  <li>- Partnership in a rapidly developing community of tourism professionals</li>
+                  <li>- Advertising on our platform</li>
+                  <li>- Attraction of new customers who want to pay for services with cryptocurrency</li>
+                  <li>- Protection of payment data in the system</li>
+                  <li>- Conferences on improving the services</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.advantages -->
+
+      <section class="roadmap" id="roadmap-section-link">
+        <div class="container">
+            <div>
+              <h2 class="title">- Roadmap</h2>
+            </div>
+
+            <div class="bigSmblRoadmap">
+              Roadmap
+            </div>
+
+            <div class="row justify-content-center">
+                <img src="images/roadmap.png">
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center roadmap-promices">
+              <img src="images/promises.png">
+            </div>
+        </div>
+          
+
+      </section>
+      <!-- /.roadmap -->
+
+      <section class="distribution">
+        <div class="container">
+
+          <div class="distribution-text">
+            <div>
+              <h2 class="title">- Distribution</h2>
+            </div>
+
+            <div class="bigSmblDist">
+              Distribution
+            </div>
+          </div>
+
+          <div class="distribution-about">
+
+            <div class="row align-items-center justify-content-center">
+              <div class="col-6 col-lg-4">
+                <div class="distribution-about-part-left">
+                  <h3 class="blue-txt">50%</h3>
+                  <p>App and plarform development</p>
+                </div>
+                <div class="distribution-about-part-left">
+                  <h3 class="red-txt">20%</h3>
+                  <p>Marketing and advertizing</p>
+                </div>
+              </div>
+
+              <div class="col-6 col-lg-4 distribution__image">
+                <img src="images/screenshot-22.png" alt="">
+              </div>
+
+              <div class="col-6 col-lg-4">
+                <div class="distribution-about-part-right">
+                  <h3 class="red-txt">15%</h3>
+                  <p>App and plarform development<br>
+                    Increase the client flow</p>
+                </div>
+                <div class="distribution-about-part-right">
+                  <h3 class="blue-txt">10%</h3>
+                  <p>Specialist and team salary</p>
+                </div>
+                <div class="distribution-about-part-right">
+                  <h3 class="red-txt">50%</h3>
+                  <p>App and plarform development <br> Increase the client flow</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>           
+        </div>
+        <!-- /.container -->
+        
+      </section>
+      <!-- /.distribution -->
+
+      <section class="directions ">
+        <div class="container">
+          <div class="direction-title">
+            <div>
+              <h2 class="title">- Directions</h2>
+            </div>
+
+            <div class="bigSmblDir">
+              Directions
+            </div>
+          </div>
+
+          <div class="direction-photo ">
+            <div class="row ">
+              <div class="col-sm-12 col-lg-4 direction-img ">
+                <div class="img-left">
+                  <img src="images/asia.png">
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-lg-4 direction-img ">
+                <div class="img-center">
+                  <img src="images/europe.png">
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-lg-4 direction-img ">
+                <div class="img-right">
+                  
+                  <img src="images/america.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row justify-content-center">
+            <div class="direction-join-btn">
+              <a href="index.html#" class="join-action-btn" data-toggle="modal" data-target="#joinmodal">JOIN</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="direction-btm">
+          <img src="images/web&#32;on&#32;the&#32;bg.svg">
+        </div>
+
+      </section>
+
+      <section class="team" >          <!-- titles -->
+        <div class="container">
+          
+            <div class="team-titles" >
+              <div class="row align-items-center">
+                
+                <div class="col-6" id="team-section-link">
+                  <h2 class="team-title__h2">- Team</h2>
+                </div>
+                <div class="col-6">
+                  <div class="team-title__big">Team</div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+        <div class="title-plane-img">
+          <img src="images/plane-team.png">
+        </div>
+
+        <div class="container">
+          <div class="row photo-ceo align-items-center">
+            <div class="team-photo-item col-4 col-lg-4">
+              <img src="images/stephencook.png">
+            </div>
+            <div class="team-photo-item col-4 col-lg-4">
+              <img src="images/richardcook.png">
+            </div>
+            <div class="team-photo-item col-4 col-lg-4">
+              <img src="images/takashiherzan.png">
+            </div>
+          </div>
+
+          <h3>European Direction Development Team</h3>
+
+          <div class="row team-block ">
+            <div class="col team-block-item">
+              <img src="images/alexlachmann.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/SuziHeltzberger.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/amandastoun.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/JohannesHeesters.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/Stellacouper.png">
+            </div>
+          </div>
+
+          <h3>American Direction Development Team</h3>
+
+
+          <div class="row team-block ">
+            <div class="col team-block-item">
+              <img src="images/summerjones.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/LingZeMun.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/IsmailMohamed.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/FarhadMehrad.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/akiraandnozomi.png">
+            </div>
+          </div>
+
+          <h3>American Direction Development Team</h3>
+
+          <div class="row team-block ">
+            <div class="col team-block-item">
+              <img src="images/AlexsanderAdamini.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/GiorgioFerreira.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/JonasSteur.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/leehermanesII.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/charliemaxwell.png">
+            </div>
+          </div>
+
+          <h3>Advisors</h3>
+
+          <div class="row team-block ">
+            <div class="col team-block-item">
+              <img src="images/alfredmorales.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/JefferyMoon.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/fedorg.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/gusev.png">
+            </div>
+            <div class="col team-block-item">
+              <img src="images/marcustaylor.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="joinBtnBack-team">
+          <div id="joinBtn2">
+            <a href="index.html#" class="join-action-btn" data-toggle="modal" data-target="#joinmodal">JOIN</a>     
+          </div>
+        </div>
+
+        
+      </section>
+      <!-- ./team -->
+
+      <footer class="footer">
+        <div class="container footer-content">
+
+          <div class="row align-items-center">
+            <div class="col-6 " >
+              © AirCraft Company. All rights reserved. 
+            </div>
+
+            <div class="col-6 footer-links">
+              <div class="col-12">
+                <a href="index.html#">Twitter</a>
+                <a href="index.html#">Telegram</a>
+                <a href="index.html#">Bitcointalk</a>
+                <a href="index.html#">Facebook</a>
+              </div>
+
+              <div class="col-12 footer-mail">
+                <p>email: 
+                  <a href="mailto:aircraftcompany@gmail.com">aircraftcompany@gmail.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+      <!-- /.footer -->
+
+
+
+    </div>
+    <!-- ./end main content -->
+
+
+    <!-- ./modal login -->
+    <div class="modal fade bd-example-modal-lg" id="joinmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+
+          <div class="modal-body">
+            <div class="joinmodal-content">
+              <div class="row">
+                <div class="col-6 login-block">
+                  <h2 class="modal-login-title">Login</h2>
+                  <input id="login-email" type="text" placeholder="E-mail">
+                  <input id="login-password" type="password" placeholder="Password">
+                  <!-- <input id="login-code" type="text" placeholder="Enter Code"> -->
+
+                  <div class="robotcheckbox-div">
+                    <input type="checkbox" name="login-robot">
+                    <label for="login-robot">I am not a robot</label>
+                  </div>
+
+                  <button id="login-btn">Login</button>
+                  <a id="forgot-login" href="index.html#">Forgot password?</a>
+                </div>
+
+                <div class="col-6" align="center">
+                  <h2 class="modal-login-title">Register</h2>
+                  <input id="reg-email" type="text" placeholder="E-mail">
+                  <input id="reg-password" type="password" placeholder="Password">
+                  <input id="reg-repass" type="password" placeholder="Repeat password">
+                  <div class="accept-checkbox-div">
+                    <input id="accept-terms-chbx" type="checkbox" name="login-accept">
+                    <label id="labelforterms" for="login-accept">I accept <a href="index.html#">Terms of Use</a> </label>
+                  </div>
+                  <button id="reg-btn">Register</button>
+                </div>
+              </div>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./modal login end -->
+
+
+    <!-- ./modal 2fa -->
+    <div class="modal fade bd-example-modal-lg" id="twofamodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+          <div class="modal-body">
+                <div class="login-block">
+                  <h2 class="modal-login-title">Two Factor Authentication</h2>
+                  <input id="twofaInput" type="text" placeholder="Code">
+
+                  <br><br>
+                  <button id="login-2fa-btn">Login</button>
+                </div>
+
+           </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./modal 2fa end -->
+
+
+    <script>
+    </script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/needim/noty/77268c46/lib/noty.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.2/js/mdb.min.js"></script>
+    <script src="script/script.js"></script>
+
+
+  </body>
+  </html>
+
