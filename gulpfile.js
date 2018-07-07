@@ -17,12 +17,12 @@ const svgo = require('gulp-svgo');
 
 gulp.task('styles', function () {
   return gulp
-    .src('source/sass/styles.scss')
+    .src('source/sass/style.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
     .pipe(minify())
-    .pipe(rename('styles.min.css'))
+    // .pipe(rename('styles.min.css'))
     .pipe(gulp.dest('build/css'))
     .pipe(server.stream())
 });
@@ -45,9 +45,9 @@ gulp.task('minHtml', function () {
 });
 
 gulp.task('jsmin', function () {
-  return gulp.src('source/js/*.js')
+  return gulp.src('source/script/*.js')
     .pipe(jsmin())
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest('build/script'));
 
 });
 
@@ -58,17 +58,15 @@ gulp.task('serve', function () {
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.parallel('styles'));
   gulp.watch('source/*.html', gulp.parallel('minHtml'))
     .on('change', server.reload);
-  gulp.watch('source/js/*.js', gulp.parallel('jsmin'))
+  gulp.watch('source/script/*.js', gulp.parallel('jsmin'))
     .on('change', server.reload);
 });
 
 
 gulp.task('copy', function () {
   return gulp.src([
-      'source/fonts/*.{woff,woff2}',
-      'source/img/**',
-      'source/video/**',
-      'source/manifest.json',
+      'source/fonts/*',
+      'source/images/**',
     ], {
       base: 'source'
     })
@@ -77,7 +75,7 @@ gulp.task('copy', function () {
 gulp.task('clean', function () {
   return del('build');
 })
-gulp.task('build', gulp.series('clean', 'minHtml', 'copy', 'jsmin','critical', 'styles', 'bootstrap', 'animate'));
+gulp.task('build', gulp.series('clean', 'minHtml', 'copy', 'jsmin','styles'));
 
 
 
