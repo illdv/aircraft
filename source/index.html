@@ -26,79 +26,7 @@
 
 
 <body>
-  <div class="container">
-    <div id="counter">
-      <div class="counterText">
-        <div class="row">
-          <div id="icoStartTitle" class="col-sm-12">
-            ICO STARTS
-          </div>
-          <div id="icoStartCounter" class="col-sm-12">
-            <span>12:</span>
-            <span>24:</span>
-            <span>23</span>
-          </div>
 
-
-          <div class="col-6">
-            <div class="process-text-start">
-              $1,000,000
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="process-text-finish">
-              $45,000,000
-            </div>
-          </div>
-          <div id="icoProgress">
-            <div id="finishProgress"></div>
-          </div>
-        </div>
-
-
-
-        <div class="smartContractLink">
-          <a href="index.html#">Smart-Contract</a>
-        </div>
-      </div>
-
-      <div class="social-links">
-        <div class="row">
-          <div class="col social-link">
-            <a href="index.html#">
-              <img src="images/bitcointalk-01.svg">
-            </a>
-          </div>
-          <div class="col social-link">
-            <a href="index.html#">
-              <img src="images/twitter-01.svg">
-            </a>
-          </div>
-          <div class="col social-link">
-            <a href="index.html#">
-              <img src="images/telegram-01.svg">
-            </a>
-          </div>
-          <div class="col social-link">
-            <a href="index.html#">
-              <img src="images/facebook-01.svg">
-            </a>
-          </div>
-          <div class="col social-link">
-            <a href="index.html#">
-              <img src="images/e-mail-01.svg">
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div id="joinBtn">
-        <button class="join-action-btn" data-toggle="modal" data-target="#joinmodal">JOIN</button>
-      </div>
-
-
-    </div>
-  </div>
   <!-- ./counter -->
 
 
@@ -106,52 +34,132 @@
   <header class="header">
 
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top scrolling-navbar ">
+      <div class="container">
+        <div class="row  w-100 align-items-center main-menu">
+          <a class="pl-0 col-6 col-md-3 navbar-brand mr-auto " href="index.html#">
+            <img id="logo" src="images/logo.png">
+          </a>
 
-      <a class="navbar-brand" href="index.html#">
-        <img id="logo" src="images/logo.png">
-      </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger" id="ham">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </button>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- button end -->
+          <!-- button end -->
 
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav">
+          <div class="col-md-9 collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
 
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#whitepeaper-section-link">WP</a>
-          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#whitepeaper-section-link">WP</a>
+              </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#features-section-link">Features</a>
-          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#features-section-link">Features</a>
+              </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#ico-section-link">ICO</a>
-          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#ico-section-link">ICO</a>
+              </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#roadmap-section-link">Roadmap</a>
-          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#roadmap-section-link">Roadmap</a>
+              </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#team-section-link">Team</a>
-          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#team-section-link">Team</a>
+              </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#">ENG</a>
-          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#">ENG</a>
+              </li>
 
-        </ul>
-      </div>
+            </ul>
+          </div>
 
-      <!-- container end -->
-
+          <!-- container end -->
+        </div>
     </nav>
+
     <!-- nav end -->
+
+    <div class="container counter-box">
+      <div id="counter">
+        <div class="counterText">
+          <div class="row">
+            <h2 class="icoStartTitle col-12">
+              ICO STARTS
+            </h2>
+            <div id="icoStartCounter" class="col-12">
+              <span>12:</span>
+              <span>24:</span>
+              <span>23</span>
+            </div>
+
+
+            <div class="col-6">
+              <div class="process-text-start">
+                $1,000,000
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="process-text-finish">
+                $45,000,000
+              </div>
+            </div>
+            <div id="icoProgress">
+              <div id="finishProgress"></div>
+            </div>
+          </div>
+
+
+
+          <div class="smartContractLink">
+            <a href="index.html#">Smart-Contract</a>
+          </div>
+        </div>
+
+        <ul class="social-links">
+
+          <li class="social-link">
+            <a href="index.html#">
+              <img class="img-fluid" src="images/bitcointalk-01.svg">
+            </a>
+          </li>
+          <li class="social-link">
+            <a href="index.html#">
+              <img class="img-fluid" src="images/twitter-01.svg">
+            </a>
+          </li>
+          <li class="social-link">
+            <a href="index.html#">
+              <img class="img-fluid" src="images/telegram-01.svg">
+            </a>
+          </li>
+          <li class="social-link">
+            <a href="index.html#">
+              <img class="img-fluid" src="images/facebook-01.svg">
+            </a>
+          </li>
+          <li class="social-link">
+            <a href="index.html#">
+              <img class="img-fluid" src="images/e-mail-01.svg">
+            </a>
+          </li>
+        </ul>
+
+        <div id="joinBtn">
+          <button class="join-action-btn" data-toggle="modal" data-target="#joinmodal">JOIN</button>
+        </div>
+
+
+      </div>
+    </div>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
@@ -185,11 +193,11 @@
         </div>
 
       </div>
-      <a class="carousel-control-prev" href="index.html#carouselExampleIndicators" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="index.html#carouselExampleIndicators" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
@@ -235,39 +243,39 @@
   <!-- news section -->
   <section class="newsSection">
     <div class="container">
-      <div class="row align-items-baseline">
+      <div class="row  title-block">
 
-        <h2 class="title col-sm-6">- News</h2>
+        <h2 class="title col">- News</h2>
 
 
-        <span class="bigSmbl ml-auto col-sm-6">News</span>
+        <span class="bigSmbl">News</span>
       </div>
 
 
       <!-- articles -->
-      <div class="row">
-        <div class="articles">
-          <div class="article col-12 col-lg-4">
-            <h3>Name of article</h3>
-            <p>Hello this ois the text about the article the first sentencses I don’t know what i|m texting</p>
-            <hr>
-            <a href="index.html#">Learn more</a>
-          </div>
+      <div class="row articles">
 
-          <div class="article col-12 col-lg-4">
-            <h3>Name of article</h3>
-            <p>Hello this ois the text about the article the first sentencses I don’t know what i|m texting</p>
-            <hr>
-            <a href="index.html#">Learn more </a>
-          </div>
-
-          <div class="article col-12 col-lg-4">
-            <h3>Name of article</h3>
-            <p>Hello this ois the text about the article the first sentencses I don’t know what i|m texting</p>
-            <hr>
-            <a href="index.html#">Learn more </a>
-          </div>
+        <div class="article col-12 col-sm-4">
+          <h3>Name of article</h3>
+          <p>Hello this ois the text about the article the first sentencses I don’t know what i|m texting</p>
+          <hr>
+          <a href="index.html#">Learn more</a>
         </div>
+
+        <div class="article col-12 col-sm-4">
+          <h3>Name of article</h3>
+          <p>Hello this ois the text about the article the first sentencses I don’t know what i|m texting</p>
+          <hr>
+          <a href="index.html#">Learn more </a>
+        </div>
+
+        <div class="article col-12 col-sm-4">
+          <h3>Name of article</h3>
+          <p>Hello this ois the text about the article the first sentencses I don’t know what i|m texting</p>
+          <hr>
+          <a href="index.html#">Learn more </a>
+        </div>
+
         <!-- articles end -->
       </div>
 
@@ -285,15 +293,15 @@
     <div class="container">
 
       <!-- titles -->
-      <div class="row align-items-baseline">
-        <h2 class="title col-sm-4">- Features</h2>
-        <span class="bigSmbl-featuresSection  col-sm-8 ml-auto">Features</span>
+      <div class="row title-block">
+        <h2 class="title col">- Features</h2>
+        <span class="bigSmbl-featuresSection ">Features</span>
       </div>
       <!-- first gif -->
       <div class="row features-gif-block align-self-center justify-content-center">
 
-        <div class="mx-auto featuresCenter-mobile">
-          <img src="images/alltogether23.gif" loop=infinite>
+        <div class="featuresCenter-mobile">
+          <img height="310" src="images/alltogether23.gif" loop=infinite>
         </div>
 
         <div class="featuresLeft col-6 col-lg-4">
@@ -320,26 +328,26 @@
 
       <!-- ship -->
       <div class="row ship align-items-center">
-        <div class="col-9">
+        <div class="col-8">
           <h4>Ferry & Cruise Ship</h4>
           <p>We offer best prices on ferries and cruise ships in the North Eupore, in the Mediterrenian sea, in and around Asia.
             Enjoy piqturesque views from your comfortable cabin, taste meals in restorans and just relax during the vacation.
             <br> More than 500 cruises will be available to book. </p>
         </div>
 
-        <div class="col-3">
-          <img src="images/ship.png">
+        <div class="col-4">
+          <img class="img-fluid" src="images/ship.png">
         </div>
       </div>
 
 
       <!-- insurancce -->
       <div class="row ship align-items-center">
-        <div class="col-2">
-          <img src="images/insurancce.png">
+        <div class="col-3">
+          <img class="img-fluid" src="images/insurancce.png">
         </div>
 
-        <div class="col-10">
+        <div class="col-9">
           <h4>Insurance</h4>
           <p>
             Nothing can overshadow your journey, if it is prepared by professionals. We will take care of your life insurance and your
@@ -380,7 +388,7 @@
 
   <section class="offerSection">
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row ">
         <div class="offerCol col-12 col-lg-6">
           <h4>The best offers</h4>
           <p>
@@ -395,31 +403,17 @@
         </div>
 
         <div class="offerImgSafary col-12 col-lg-6">
-          <img src="images/safary.png">
-
-          <!--               <div class="giftOffer">
-                <img src="images/gift.png">
-              </div> -->
-          <div class="demo-platform-div">
-            <a href="index.html#" class="demoPltformBtn ">
-              Demo Platform
-            </a>
-          </div>
+          <img class="img-fluid" src="images/safary.png">
         </div>
 
       </div>
 
       <div class="row align-items-center">
-        <div class="col-12 col-lg-6">
-          <div id="iphonex3">
-            <img width="316px" src="images/iphone-x-3-.png">
-          </div>
-          <div id="xiomi">
-            <img width="130px" src="images/xiaomi-mi-band------.png">
-          </div>
+        <div class="col-12 col-md-6">
+          <img class="img-fluid" src="./images/gadget.png" alt="gadget">
         </div>
 
-        <div class="airapp col-12 col-lg-6">
+        <div class="airapp col-12 col-md-6">
           <h4>
             AirCraft App
           </h4>
@@ -455,18 +449,18 @@
   </section>
   <section class="icoSection" id="ico-section-link">
     <div class="container">
-      <div class="row align-items-baseline">
-        <h2 class="title col-sm-6">- ICO</h2>
-        <span class="bigSmbl ml-auto col-sm-6"> ICO</span>
+      <div class="row title-block">
+        <h2 class="title col">- ICO</h2>
+        <span class="bigSmbl"> ICO</span>
 
-        <p class="col-12 col-lg-9 offset-lg-3 text-block-ico">
+        <p class="col-9 offset-3 text-block-ico">
           The ICO is the most convenient and fair way to spread currency in the world, attract audience interest & attention, organize
           a cohesive community of user investors, whose goal is to improve the service and its prosperity.
         </p>
       </div>
       <div class="row">
         <h2 class="col-12 titleIco">ICO Details</h2>
-        <dl class="col-6 icoDetails">
+        <dl class="col-sm-8 icoDetails">
 
           <dt>Start</dt>
           <dd>March 15 13:00 UTC</dd>
@@ -488,7 +482,7 @@
 
         </dl>
 
-        <div class="img-block col-6">
+        <div class="img-block col">
           <img class="img-fluid " src="images/money.png">
         </div>
       </div>
@@ -502,9 +496,9 @@
 
   <section class="advantages">
     <div class="container">
-      <div class="row align-items-baseline">
-        <h2 class="title">- Advantages</h2>
-        <!-- <span class="bigSmbl  col-sm-6">Advantages</span> -->
+      <div class="row title-block">
+        <h2 class="title col">- Advantages</h2>
+        <span class="bigSmbl">Advantages</span>
       </div>
 
 
@@ -555,12 +549,21 @@
   <!-- /.advantages -->
 
   <section class="roadmap" id="roadmap-section-link">
+    <svg class='hexagon1' viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
+      <polygon stroke-width="3" stroke-linejoin="round" stroke="#f4f7fe" points="50 1 95 25 95 75 50 99 5 75 5 25" fill="#f4f7fe"
+      />
+    </svg>
+    <svg class='hexagon2' viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+      <polygon stroke-width="3" stroke-linejoin="round" stroke="#f3f4f8" points="50 1 95 25 95 75 50 99 5 75 5 25" fill="#f3f4f8"
+      />
+    </svg>
     <div class="container">
-      <div class="row align-items-baseline">
-        <h2 class="title col-sm-4">- Roadmap</h2>
+      <div class="row title-block">
+        <h2 class="title col">- Roadmap</h2>
         <div id="hexagon"></div>
-        <span class="bigSmbl col-sm-8 ml-auto">Roadmap</span>
+        <span class="bigSmbl">Roadmap</span>
       </div>
       <!-- <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -571,23 +574,13 @@
           <polygon stroke-width="3" stroke-linejoin="round" stroke="#2956f2" points="50 1 95 25 95 75 50 99 5 75 5 25" fill="url(#img)"
           />
         </svg> -->
-      <svg class='hexagon1' viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
-        <polygon stroke-width="3" stroke-linejoin="round" stroke="#f4f7fe" points="50 1 95 25 95 75 50 99 5 75 5 25" fill="#f4f7fe"
-        />
-      </svg>
-      <svg class='hexagon2' viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-
-        <polygon stroke-width="3" stroke-linejoin="round" stroke="#f3f4f8" points="50 1 95 25 95 75 50 99 5 75 5 25" fill="#f3f4f8"
-        />
-      </svg>
 
       <div class=" row justify-content-center ">
-        <img src="images/roadmap.png ">
+        <img class="img-fluid" src="images/roadmap.png ">
       </div>
 
-    </div>
-    <div class="container-fluid ">
+
       <div class="row justify-content-center roadmap-promices ">
         <img src="images/promises.png ">
       </div>
@@ -600,15 +593,15 @@
   <section class="distribution ">
     <div class="container ">
 
-      <div class=" row distribution-text align-items-baseline">
-        <h2 class="title">- Distribution</h2>
-        <span class="bigSmbl ml-auto">
+      <div class=" row distribution-text title-block">
+        <h2 class="title col">- Distribution</h2>
+        <span class="bigSmbl">
           Distribution
         </span>
       </div>
 
 
-      <div class="row align-items-center justify-content-center">
+      <div class="row distribution-content">
         <div class="col-6 col-lg-4 ">
           <div class="distribution-about-part-left ">
             <h3 class="blue-txt ">50%</h3>
@@ -621,7 +614,7 @@
         </div>
 
         <div class="col-6 col-lg-4 distribution__image ">
-          <img src="images/screenshot-22.png " alt=" ">
+          <img class="img-fluid" src="images/screenshot-22.png " alt="logo-plane">
         </div>
 
         <div class="col-6 col-lg-4 ">
@@ -652,12 +645,12 @@
 
   <section class="directions ">
     <div class="container ">
-      <div class="row direction-title  distribution-text align-items-baseline ">
+      <div class="row direction-title  distribution-text title-block">
 
-        <h2 class="title ">- Directions</h2>
+        <h2 class="title col">- Directions</h2>
 
 
-        <span class="bigSmbl ml-auto">
+        <span class="bigSmbl">
           Directions
         </span>
       </div>
@@ -686,31 +679,32 @@
       </div>
 
 
-      <div class="direction-join-btn ">
-        <button class="join-action-btn " data-toggle="modal " data-target="#joinmodal ">JOIN</button>
-      </div>
+
 
 
     </div>
-    <div class="direction-btm ">
-      <img src="images/web&#32;on&#32;the&#32;bg.svg ">
-    </div>
+
+    <img class="img-web img-fluid" src="images/web.svg">
+
 
   </section>
 
   <section class="team ">
+    <div class="direction-join-btn ">
+      <button class="join-action-btn " data-toggle="modal " data-target="#joinmodal ">JOIN</button>
+    </div>
     <!-- titles -->
     <div class="container ">
-      <div class="row team-titles align-items-baseline ">
-        <h2 class="title col-6" id="team-section-link">- Team</h2>
-        <span class="bigSmbl col-6 ml-auto">Team</span>
+      <div class="row team-titles title-block">
+        <h2 class="title col" id="team-section-link">- Team</h2>
+        <span class="bigSmbl">Team</span>
       </div>
 
 
 
-      <div class="row photo-ceo align-items-center">
-        <div class="team-photo-item col-3">
-          <img class="img-fluid" src="images/face-1.png">
+      <div class="row photo-ceo justify-content-lg-start">
+        <div class="team-photo-item ">
+          <img src="images/face-1.png">
           <div class="short-info">
             <dl>
               <dt>Stephen Cook</dt>
@@ -729,8 +723,8 @@
             </ul>
           </div>
         </div>
-        <div class="team-photo-item col-3">
-          <img class="img-fluid" src="images/face-2.png">
+        <div class="team-photo-item ">
+          <img src="images/face-2.png">
           <div class="short-info">
             <dl>
               <dt>Ricard Cook</dt>
@@ -749,8 +743,8 @@
             </ul>
           </div>
         </div>
-        <div class="team-photo-item col-3">
-          <img class="img-fluid" src="images/face-3.png">
+        <div class="team-photo-item ">
+          <img src="images/face-3.png">
           <div class="short-info">
             <dl>
               <dt>Takashi Herzan</dt>
@@ -1204,26 +1198,33 @@
   </section>
   <!-- ./team -->
 
-  <footer class="footer ">
-    <div class="container footer-content ">
-      <div class="row align-items-center ">
-        <address class="col-6 ">
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="row align-items-end">
+        <address class="col-md-6">
           © AirCraft Company. All rights reserved.
         </address>
 
-        <div class="col-6 footer-links">
-          <div class="col-12 ">
-            <a href="index.html# ">Twitter</a>
-            <a href="index.html# ">Telegram</a>
-            <a href="index.html# ">Bitcointalk</a>
-            <a href="index.html# ">Facebook</a>
-          </div>
+        <div class="footer-section col-md-6 col-12">
+          <p class="footer-mail">
+            email:
+            <a href="mailto:aircraftcompany@gmail.com ">aircraftcompany@gmail.com</a>
+          </p>
+          <ul class="footer-links ">
+            <li>
+              <a href="index.html# ">Twitter</a>
+            </li>
+            <li>
+              <a href="index.html# ">Telegram</a>
+            </li>
+            <li>
+              <a href="index.html# ">Bitcointalk</a>
+            </li>
+            <li>
+              <a href="index.html# ">Facebook</a>
+            </li>
+          </ul>
 
-          <div class="col-12 footer-mail">
-            <p>email:
-              <a href="mailto:aircraftcompany@gmail.com ">aircraftcompany@gmail.com</a>
-            </p>
-          </div>
         </div>
       </div>
     </div>
@@ -1352,7 +1353,19 @@
   <script src="script/script.js "></script>
 
 
-
+  <script>
+    $(document).ready(function () {
+      $(".hamburger").click(function () {
+        $(this).toggleClass("active");
+      });
+    });
+    $(document).ready(function () {
+      $(".nav-item").click(function () {
+        $(".navbar-collapse").toggleClass("show");
+        $(".hamburger").toggleClass("active");
+      });
+    });
+  </script>
 </body>
 
 </html>
