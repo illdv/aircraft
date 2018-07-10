@@ -1011,11 +1011,14 @@ li {
 	position: relative;
 }
 
+.web-block {
+	position: relative;
+}
+
 .img-web {
 	position: absolute;
-	height: 775px;
 	width: 100%;
-	bottom: -400px;
+	bottom: -630px;
 	opacity: 0.5;
 	left: 0;
 	object-fit: cover;
