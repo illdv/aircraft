@@ -1018,7 +1018,7 @@ li {
 .img-web {
 	position: absolute;
 	width: 100%;
-	bottom: -500px;
+	bottom: -650px;
 	opacity: 0.5;
 	height: 900px;
 	left: 0;
@@ -1822,6 +1822,9 @@ li {
 }
 
 .teamModal {
+	img {
+		object-fit: cover;
+	}
 	.modal-dialog {
 		max-width: 750px;
 	}
