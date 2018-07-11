@@ -31,7 +31,9 @@ a {
 	text-decoration: none;
 	list-style: none;
 }
-
+ul{
+	padding-left: 0;
+}
 li {
 	text-decoration: none;
 	list-style: none;
@@ -1524,10 +1526,15 @@ vertical-align: middle;
 
 @media screen and (max-width:767px) {
 	.header {
-		margin-top: 72px;
+		margin-top: 58px;
 	}
+
 	.head-img{
 		display: block;
+	}
+	.navbar.scrolling-navbar{
+		padding-top: 0!important;
+		padding-bottom: 0!important;
 	}
 	.head-img img{
 		
@@ -1535,10 +1542,7 @@ vertical-align: middle;
 	height: 900px;
 	object-fit: cover;
 	}
-	#logo {
-		max-width: 100%;
-		height: auto;
-	}
+
 
 	.navbar.scrolling-navbar.top-nav-collapse {
 		padding-top: 0 !important;
@@ -1690,21 +1694,16 @@ display: flex;
 width: 100%;
 position: relative;
 		.counterText {
-			padding-left: 30px;
-			padding-right: 30px;
-			div {
-				padding-left: 0;
-				padding-right: 0;
-			}
+			padding-left: 15px;
+			padding-right: 15px;
+
 		}
-	}
-	#icoProgress {
-		margin-left: 0;
-		margin-right: 0;
-	}
-	#icoStartCounter {
+		#icoStartCounter{
 		padding: 0;
 	}
+}
+
+
 	.text-block-ico {
 		transform: translate(0);
 	}
