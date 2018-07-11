@@ -183,6 +183,7 @@ li {
 }
 
 @media all and (max-width: 500px) {
+
 	.vid-info .acronym {
 		display: none;
 	}
@@ -651,7 +652,7 @@ vertical-align: middle;
 	margin-top: 50px;
 	text-align: center;
 	background-color: #f7f7f7;
-	padding: 35px 0;
+	padding: 35px 15px;
 }
 
 .icoSection {
@@ -801,6 +802,7 @@ vertical-align: middle;
 	.roadmap-target {
 		margin-top: 80px;
 		margin-bottom: 100px;
+		flex-basis: 50%;
 		li {
 			display: flex;
 			flex-direction: column;
@@ -1010,7 +1012,7 @@ vertical-align: middle;
 
 .direction-join-btn {
 	text-align: center;
-	padding-top: 50px;
+	padding: 50px 15px 0;
 	z-index: 2;
 	position: relative;
 }
@@ -1159,7 +1161,7 @@ vertical-align: middle;
 	margin-top: 60px;
 	background-color: #05191c;
 	text-align: center;
-	padding: 35px 0;
+	padding: 35px 15px;
 }
 
 .footer {
@@ -1783,6 +1785,10 @@ position: relative;
 }
 
 @media (max-width: 500px) {
+	.join-action-btn{
+		width: 100%;
+
+	}
 	.distribution-content {
 		flex-direction: row;
 	}
