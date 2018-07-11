@@ -8,29 +8,24 @@
 	src: url('../fonts/GothamPro-Bold.ttf'), url('../fonts/GothamPro-Bold.ttf');
 }
 
-html {
-	width: 100%;
-	max-width: 100%;
-}
+
 
 body {
-	width: 100%;
-	max-width: 100%;
+	font-size: 16px;
+
 	color: #131313;
 	font-family: 'Gotham Pro Regular';
 }
 
 video {
+	position: relative;
 	width: 100%;
 	height: 900px;
 	object-fit: fill;
+	z-index: -1;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	font-size: 16px;
-}
+
 
 a {
 	text-decoration: none;
@@ -103,13 +98,9 @@ li {
 	text-align: center;
 }
 
-.counter-box {
-	position: relative;
-}
 
-* {
-	box-sizing: border-box;
-}
+
+
 
 .video-background {
 	background: #000;
@@ -194,23 +185,29 @@ li {
 		display: none;
 	}
 }
+.counter-box {
+	position: relative;
+	height: 500px;
+	margin-top: -500px;
+	top: 690px;
+width: 100%;
 
+}
 #counter {
 	display: flex;
 	flex-direction: column;
+	margin: 0 15px;
+right: 0;
 	position: absolute;
-	margin-top: -500px;
-	top: 690px;
-	right: 0;
 	background-color: rgba(255, 255, 255, 0.8);
-	height: 500px;
 	width: 500px;
+	height: 100%;
 	border-radius: 8px;
-	z-index: 999;
-	margin-left: 15px;
-	margin-right: 15px;
-}
 
+}
+.head-img{
+	display: none;
+}
 .counterText {
 	font-family: "Gotham Pro Bold";
 	padding: 50px 50px 0;
@@ -289,6 +286,7 @@ li {
 	width: 100%;
 	bottom: -130px;
 	left: 0;
+	padding-left: 0;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: nowrap;
@@ -309,14 +307,18 @@ li {
 }
 
 .join-action-btn {
+display: inline-block;
+vertical-align: middle;
 	width: 300px;
-	height: 60px;
+	height: 65px;
 	border-radius: 13px;
 	cursor: pointer;
 	color: #fff;
 	font-family: "Gotham Pro Bold";
-	text-decoration: none;
 	font-size: 44px;
+	padding: 0;
+	margin: 0;
+	line-height: 44px;
 	font-weight: 700;
 	text-transform: uppercase;
 	border: 1px solid #595959;
@@ -905,13 +907,13 @@ li {
 
 .hexagon1 {
 	fill: #f4f7fe;
-	left: 200px;
+	left: 150px;
 	top: 550px;
 }
 
 .hexagon2 {
 	fill: #f3f4f8;
-	right: 200px;
+	right: 150px;
 	top: 200px;
 }
 
@@ -1356,9 +1358,7 @@ li {
 		flex-basis: 40%;
 		margin-left: auto;
 	}
-	#counter {
-		left: 300px;
-	}
+
 	.icoDetails dt {
 		flex-basis: 35%;
 	}
@@ -1381,13 +1381,16 @@ li {
 		flex-basis: 50%;
 		margin-left: auto;
 	}
+	.counter-box{
+		top: 660px
+	}
 	#counter {
 		right: 0;
 		left: 0;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
-		top: 650px;
+		z-index: 999;
 	}
 	.counterText {
 		order: 1;
@@ -1521,21 +1524,22 @@ li {
 
 @media screen and (max-width:767px) {
 	.header {
-		height: 91rem;
-		background-image: url('../images/head1.jpg');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
 		margin-top: 72px;
+	}
+	.head-img{
+		display: block;
+	}
+	.head-img img{
+		
+	max-width: 100%;
+	height: 900px;
+	object-fit: cover;
 	}
 	#logo {
 		max-width: 100%;
 		height: auto;
 	}
-	.main-menu {
-		background-color: #fff !important;
-		opacity: .8;
-	}
+
 	.navbar.scrolling-navbar.top-nav-collapse {
 		padding-top: 0 !important;
 		padding-bottom: 0 !important;
@@ -1553,8 +1557,8 @@ li {
 	.navbar-toggler {
 		height: 50px;
 		width: 50px;
-		padding: 0;
-		display: flex;
+box-sizing: content-box;
+display: flex;
 		align-items: center;
 		justify-content: center;
 	}
@@ -1582,9 +1586,11 @@ li {
 		opacity: .8;
 	}
 	.nav-item {
+		background-color: rgba($color: #fff, $alpha: 0.8);
+	
 		border-top: 1px solid #1a1a1a;
-		&:last-child {
-			border-bottom: 1px solid #1a1a1a;
+		&:first-child {
+			border-top:none;
 		}
 	}
 	.nav-link {
@@ -1679,9 +1685,10 @@ li {
 }
 
 @media (max-width: 576px) {
+
 	#counter {
-		width: 100%;
-		position: relative;
+width: 100%;
+position: relative;
 		.counterText {
 			padding-left: 30px;
 			padding-right: 30px;
