@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg enable-background="new 0 0 313 100.2" version="1.1" viewBox="0 0 313 100.2" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style type="text/css">
-	.st0{clip-path:url(#a);fill:#F7F7F7;}
+	.st0{clip-path:url(#a);fill:#F7F7F7; transform: scale(-1, 1);}
 </style>
 	<defs>
 		<rect id="b" width="313" height="100.2"/>

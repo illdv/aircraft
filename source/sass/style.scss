@@ -14,6 +14,7 @@ body {
   font-size: 16px;
   color: #131313;
   font-family: 'Gotham Pro Regular';
+  position: relative;
 }
 
 a {
@@ -40,7 +41,7 @@ li {
     left: 0;
     width: 100%;
     height: 900px;
-    object-fit: cover;
+    object-fit: fill;
     z-index: -1;
     object-position: 50% 50%;
   }
@@ -98,7 +99,6 @@ li {
   display: flex;
   flex-direction: column;
   width: 500px;
-  height: 363.5px;
 }
 
 .counterText {
@@ -106,7 +106,6 @@ li {
   color: #1a224f;
   padding: 30px 50px;
   text-align: center;
-  height: 350px;
   box-sizing: content-box;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
@@ -258,6 +257,7 @@ li {
   width: 100%;
   text-align: left;
   padding-left: 30px;
+  padding-right: 30px;
   color: rgba(255, 255, 255, 0.9);
   font-size: 28px;
   font-weight: 300;
@@ -271,7 +271,7 @@ li {
   }
 }
 
-.wptext p {
+.wptext {
   font-size: 18px;
   font-family: 'Gotham Pro Regular';
   margin-bottom: 0;
@@ -335,6 +335,7 @@ li {
 
 .title-block {
   position: relative;
+  margin-bottom: 70px;
 }
 
 .title {
@@ -415,10 +416,6 @@ li {
   /*margin-top: 30px;*/
   width: 100%;
   float: left;
-}
-
-.features-gif-block {
-  margin-top: 100px;
 }
 
 .features-gif-block .gif {
@@ -594,7 +591,7 @@ li {
   transform: translateY(-50px);
   font-size: 24px;
   color: #131313;
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 }
 
 .titleIco {
@@ -640,22 +637,10 @@ li {
     object-fit: cover;
   }
 }
+
 .bonuses-section {
   background-color: #022027;
-  position: relative;
-  z-index: 2;
-  &::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 15%;
-    right: 0;
-    background-image: url('../images/bubble.png'), url('../images/plane.png');
-    background-position: 100% 100%, 0% 5%;
-    background-repeat: no-repeat, no-repeat;
-    background-size: contain, contain;
-    z-index: -1;
-  }
+
   &::after {
     content: '';
     position: absolute;
@@ -663,36 +648,103 @@ li {
     width: 15%;
     left: 0;
     bottom: 0;
-    background-image: url('../images/bubble.png'), url('../images/plane.png');
+    background-image: url('../images/bubble.png');
     background-position: 100% 100%, 0% 5%;
     background-repeat: no-repeat, no-repeat;
     background-size: contain, contain;
     z-index: -1;
-    transform: scale(-1, 1);
   }
 }
+
 .ico-details-midle-title {
   color: #fff;
+  margin: 0 15px;
   font-family: 'Gotham Pro Bold';
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 30px;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  margin-bottom: 0;
+  position: relative;
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    width: 20%;
+    top: 0;
+    height: 163px;
+    background-image: url('../images/plane.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &::after {
+    right: 0;
+    transform: rotate(10deg);
+  }
+  &::before {
+    left: 0;
+    transform: scale(-1, 1) rotate(10deg);
+  }
 }
+
 .referral-text {
   color: #ffffff;
   font-family: 'Gotham Pro Bold';
   font-size: 16px;
   text-align: center;
-
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+  padding-top: 70px;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    bottom: 0;
+    height: 195px;
+    background-image: url('../images/bubble.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &::before {
+    left: 0;
+    transform: scale(-1, 1);
+    background-position: 100% 50%;
+  }
+  &::after {
+    right: 0;
+    background-position: 100% 50%;
+  }
+  a {
+    color: #ffffff;
+    font-family: 'Gotham Pro Bold';
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid grey;
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+      border-bottom: none;
+      padding-bottom: 1px;
+    }
+    &:active {
+      opacity: 1;
+      border-bottom: 1px solid grey;
+    }
+  }
   b {
     font-size: 36px;
   }
 }
+
 .ico-details-table {
-  margin-bottom: 60px;
+  margin-bottom: 0;
   tbody tr:nth-child(even) td {
     background-color: #f6f6f6;
   }
@@ -700,28 +752,20 @@ li {
   th {
     background-color: #fff;
     color: #131313;
-    font-family: 'Gotham Pro';
-    font-size: 24px;
+    font-family: 'Gotham Pro Regular';
+    font-size: 22px;
     font-weight: 400;
     text-align: center;
     border: none !important;
     border-left: 1px solid #dcdcdc !important;
-  }
-  td,
-  th {
-    color: #131313;
-    font-family: 'Gotham Pro';
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-    border: none !important;
-    letter-spacing: -0.24px;
     padding: 25px 0 !important;
   }
+
   td,
   thead th:not(:first-child) {
     border-left: 1px solid #dcdcdc !important;
     width: 250px;
+    vertical-align: middle;
   }
   thead th {
     border-bottom: 1px solid #dcdcdc !important;
@@ -730,10 +774,6 @@ li {
 
 .advantages {
   margin-top: 200px;
-}
-
-.advantages-for-who {
-  margin-top: 48px;
 }
 
 .forblock {
@@ -769,116 +809,13 @@ li {
 .roadmap {
   margin-top: 200px;
   position: relative;
-  ul {
-    margin-bottom: 0;
-    li {
-      font-size: 24px;
+  .roadmap-block {
+    width: 100%;
+    height: 100%;
+    text,
+    tspan {
       font-family: 'Gotham Pro Regular';
-      font-weight: 400;
-      span {
-        font-size: 24px;
-        font-family: 'Gotham Pro Regular';
-        font-weight: 400;
-      }
-    }
-  }
-  .roadmap-date,
-  .roadmap-target {
-    margin-top: 80px;
-    margin-bottom: 100px;
-    flex-basis: 50%;
-    li {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      min-height: 140px;
-      margin-bottom: 20px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-  .roadmap-date {
-    text-align: right;
-    padding-right: 50px;
-    position: relative;
-    .border-roadmap {
-      position: absolute;
-      right: -31.5px;
-      width: 60px;
-      height: 60px;
-      transform: rotate(90deg);
-      z-index: 2;
-      .textsvg {
-        transform: rotate(270deg);
-        fill: #2956f2;
-        font-size: 50px;
-        line-height: 15px;
-        font-family: 'Gotham Pro Regular';
-      }
-    }
-    .border-roadmap.done {
-      .textsvg {
-        fill: white;
-      }
-    }
-  }
-  .roadmap-target {
-    border-left: 2px solid #2956f2;
-    padding-left: 50px;
-  }
-  .roadmap-price,
-  .roadmap-promices {
-    display: flex;
-    justify-content: center;
-    flex-basis: 100%;
-    li {
-      width: 150px;
-      padding: 0 15px;
-      box-sizing: content-box;
-    }
-  }
-  .roadmap-price {
-    li {
-      position: relative;
-      &::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 5px;
-        width: 3px;
-        height: 70px;
-        background-color: #dd3636;
-      }
-    }
-    li:first-child::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 5px;
-      width: 3px;
-      height: 70px;
-      background-color: #dd3636;
-    }
-  }
-  .roadmap-promices {
-    li {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      overflow: hidden;
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 115%;
-        height: 2px;
-        background-color: #131313;
-      }
-    }
-    li:first-child::after {
-      left: -24px;
+      color: #131313;
     }
   }
   .hexagon1,
@@ -892,33 +829,78 @@ li {
 }
 
 .hexagon1 {
-  fill: #f4f7fe;
+  fill: #f9faff;
   left: 150px;
-  top: 550px;
+  top: 400px;
 }
 
 .hexagon2 {
-  fill: #f3f4f8;
+  fill: #f8f8fb;
   right: 150px;
-  top: 200px;
+  top: 150px;
 }
 
 .distribution {
   margin-top: 200px;
   font-family: 'Gotham Pro Regular';
-  p {
-    font-size: 24px;
-    color: #0a0a0a;
-    font-style: italic;
+  .distribution-image-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
   }
-}
-
-.distribution-text {
-  margin-bottom: 80px;
-}
-
-.distribution-about-part-left {
-  text-align: right;
+  ul {
+    margin-bottom: 0;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  li {
+    font-size: 20px;
+    color: #131313;
+    position: relative;
+    margin-bottom: 30px;
+    line-height: 40px;
+    padding-left: 70px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    span {
+      display: inline-block;
+      vertical-align: top;
+      width: 50px;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 40px;
+        left: 0;
+        top: 0px;
+      }
+    }
+  }
+  li:nth-child(1) span::before {
+    background-color: #556dba;
+  }
+  li:nth-child(2) span::before {
+    background-color: #7297f7;
+  }
+  li:nth-child(3) span::before {
+    background-color: #00dcff;
+  }
+  li:nth-child(4) span::before {
+    background-color: #001e73;
+  }
+  li:nth-child(5) span::before {
+    background-color: #0055f6;
+  }
+  li:nth-child(6) span::before {
+    background-color: #ff4f49;
+  }
+  li:nth-child(7) span::before {
+    background-color: #0035a9;
+  }
 }
 
 .blue-txt,
@@ -932,10 +914,6 @@ li {
 
 .red-txt {
   color: #e1114e;
-}
-
-.distribution-content {
-  align-items: center;
 }
 
 .directions {
@@ -994,22 +972,18 @@ li {
 
 .direction-join-btn {
   text-align: center;
-  padding: 50px 15px 0;
+  padding: 50px 15px;
   z-index: 2;
-  position: relative;
-}
-
-.web-block {
   position: relative;
 }
 
 .img-web {
   position: absolute;
   width: 100%;
-  bottom: -650px;
   opacity: 0.5;
-  height: 900px;
   left: 0;
+  height: 900px;
+  bottom: -450px;
   object-fit: cover;
 }
 
@@ -1032,7 +1006,7 @@ li {
 }
 
 .team-titles {
-  margin-top: 275px;
+  margin-top: 225px;
   position: relative;
   z-index: 2;
 }
@@ -1054,7 +1028,6 @@ li {
 }
 
 .photo-ceo {
-  padding-top: 15px;
   margin-bottom: 150px;
   justify-content: center;
   .short-info {
@@ -1137,18 +1110,62 @@ li {
   display: flex;
 }
 
-.joinBtnBack-team {
-  margin-top: 60px;
-  background-color: #05191c;
+.web-block-bottom {
+  background-color: #022027;
+  position: relative;
+  overflow: hidden;
+  img {
+    position: absolute;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+}
+
+.buy-tokens {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  color: #ffffff;
+  font-family: 'Gotham Pro Bold';
+  font-size: 30px;
   text-align: center;
-  padding: 35px 15px;
+  position: relative;
+  z-index: 2;
+  button {
+    margin-top: 120px;
+    z-index: 2;
+  }
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    width: 30%;
+    height: 160px;
+    background-image: url('../images/plane.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  &::before {
+    right: 0;
+    transform: rotate(10deg);
+  }
+  &::after {
+    left: 0;
+    transform: scale(-1, 1) rotate(10deg);
+  }
 }
 
 .footer {
-  background-color: #000103;
+  position: relative;
+  z-index: 2;
   color: #ffffff;
   font-family: 'Gotham Pro Regular';
   font-size: 16px;
+  padding-bottom: 110px;
   address {
     margin-bottom: 0;
     flex-basis: 30%;
@@ -1179,11 +1196,6 @@ li {
 .footer a {
   color: #ffffff;
   text-decoration: none;
-}
-
-.footer-content {
-  padding-top: 35px;
-  padding-bottom: 35px;
 }
 
 .modal-body {
@@ -1357,13 +1369,16 @@ li {
       width: 200px;
     }
   }
-
   .team {
     background-position: 300px 110px;
   }
 }
 
 @media screen and (max-width: 991px) {
+  .img-web {
+    height: 600px;
+    bottom: -300px;
+  }
   address {
     margin-bottom: 0;
     flex-basis: 50%;
@@ -1447,37 +1462,36 @@ li {
     thead th:not(:first-child) {
       width: 150px;
     }
+    thead th:first-child {
+      width: 70px;
+    }
+  }
+  .bonuses-section .container {
+    max-width: 100%;
+  }
+  .ico-details-table td,
+  .ico-details-table th {
+    font-size: 18px;
   }
   .roadmap {
     .hexagon1,
     .hexagon2 {
-      width: 300px;
-      height: 300px;
+      width: 200px;
+      height: 200px;
       position: absolute;
       z-index: -1;
     }
-    .roadmap-date,
-    .roadmap-target,
-    .roadmap-price,
-    .roadmap-promices {
-      li,
-      span {
-        font-size: 18px;
-      }
+    .hexagon1 {
+      top: 300px;
     }
   }
-  .distribution-content {
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-  }
-  .distribution-about-part-right {
-    text-align: right;
-  }
-  .distribution__image {
-    position: absolute;
-    right: 0;
-    bottom: 25%;
+  .distribution {
+    .distribution-image-block {
+      padding-right: 15px;
+    }
+    ul {
+      padding-left: 15px;
+    }
   }
   .team-titles {
     padding-top: 200px;
@@ -1497,9 +1511,18 @@ li {
     float: left;
     margin-top: 50px;
   }
+  .buy-tokens {
+    &::after,
+    &::before {
+      top: 40%;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .direction-join-btn {
+    background-color: rgba(0, 1, 3, 0.2);
+  }
   .header {
     margin-top: 58px;
     position: relative;
@@ -1536,6 +1559,8 @@ li {
     margin-bottom: 0;
   }
   .navbar-toggler {
+    padding: 0;
+    padding-right: 15px;
     height: 50px;
     width: 50px;
     box-sizing: content-box;
@@ -1594,38 +1619,54 @@ li {
   .article {
     flex-basis: auto;
   }
-
+  .wptext {
+    margin-top: 100px;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: center;
+    text-indent: 1.5em;
+  }
   .ico-details-table td,
   .ico-details-table th {
     font-size: 16px;
   }
-
-  .roadmap {
-    .roadmap-date,
-    .roadmap-target,
-    .roadmap-price,
-    .roadmap-promices {
-      li,
-      span {
-        font-size: 16px;
-      }
-    }
-    .roadmap-promices {
-      li,
-      span {
-        font-size: 14px;
-      }
-    }
-    .roadmap-price,
-    .roadmap-promices {
-      padding: 0 10px;
-      li {
-        padding: 0 10px;
-      }
+  .ico-details-midle-title {
+    &::after,
+    &::before {
+      display: none;
     }
   }
-  .distribution__image {
-    bottom: 32%;
+  .referral-text {
+    padding-left: 30%;
+    padding-bottom: 150px;
+    padding-top: 170px;
+    &::after {
+      display: none;
+    }
+    &::before {
+      height: 100%;
+      width: 50%;
+      background-position: 100% 100%;
+    }
+  }
+
+  .roadmap {
+    .hexagon1,
+    .hexagon2 {
+      display: none;
+    }
+  }
+  .distribution {
+    .distribution-image-block {
+      justify-content: center;
+    }
+    ul {
+      margin-top: 30px;
+      align-items: center;
+      li {
+        width: 350px;
+      }
+    }
   }
   .icoDetails dt {
     flex-basis: 30%;
@@ -1674,13 +1715,23 @@ li {
   .bigSmbl-featuresSection {
     font-size: 90px;
   }
+  .buy-tokens {
+    &::after,
+    &::before {
+      top: auto;
+      bottom: 0;
+      width: 45%;
+    }
+  }
+  .web-block-bottom img {
+    height: 83%;
+  }
   .footer {
+    background-color: rgba(0, 1, 3, 0.2);
+    padding: 20px 0;
     .footer-links {
       margin-bottom: 1rem;
     }
-  }
-  .distribution p {
-    font-size: 16px;
   }
   .ico-details-table td,
   .ico-details-table thead th:not(:first-child) {
@@ -1689,6 +1740,9 @@ li {
 }
 
 @media (max-width: 576px) {
+  .img-web {
+    bottom: -250px;
+  }
   .text-block-ico {
     transform: translate(0);
   }
@@ -1713,51 +1767,10 @@ li {
       height: 200px;
     }
   }
-  .roadmap {
-    .hexagon1,
-    .hexagon2 {
-      width: 150px;
-      height: 150px;
-    }
-    .roadmap-price {
+  .distribution {
+    ul {
       li {
-        text-align: center;
-      }
-    }
-    .roadmap-date {
-      padding-right: 35px;
-    }
-    .roadmap-target {
-      padding-left: 35px;
-    }
-    .roadmap-price,
-    .roadmap-promices {
-      padding: 0;
-      li {
-        padding: 0;
-      }
-    }
-    .roadmap-date,
-    .roadmap-target,
-    .roadmap-price,
-    .roadmap-promices {
-      li,
-      span {
-        font-size: 16px;
-      }
-    }
-    .roadmap-price,
-    .roadmap-promices {
-      li,
-      span {
-        font-size: 14px;
-      }
-    }
-    .roadmap-promices {
-      li,
-      span {
-        font-size: 10px;
-        text-align: left;
+        width: 100%;
       }
     }
   }
@@ -1792,13 +1805,6 @@ li {
   .join-action-btn {
     width: 100%;
   }
-  .distribution-content {
-    flex-direction: row;
-  }
-  .distribution__image {
-    bottom: 50px;
-    left: 0;
-  }
   .footer-mail a {
     padding-left: 10px;
   }
@@ -1830,6 +1836,16 @@ li {
     dt,
     dd {
       font-size: 16px;
+    }
+  }
+  .distribution {
+    ul {
+      li {
+        font-size: 16px;
+        span {
+          width: 45px;
+        }
+      }
     }
   }
 }
