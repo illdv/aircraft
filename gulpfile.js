@@ -22,7 +22,6 @@ gulp.task('styles', function () {
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
     .pipe(minify())
-    // .pipe(rename('styles.min.css'))
     .pipe(gulp.dest('build/css'))
     .pipe(server.stream())
 });

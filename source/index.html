@@ -157,12 +157,12 @@
 
     </div>
 
-    <div class="head-img">
-      <img src="./images/tower-sm.jpg" alt="background-img ">
-    </div>
 
+    <video class="sm-video" autoplay loop poster="images/tower-sm.jpg">
+      <source src="images/bg4 29 2 - converted with Clipchamp.mp4 " type="video/mp4 ">
+    </video>
 
-    <video autoplay loop poster="images/tower-bg.jpg">
+    <video class="bg-video" autoplay loop poster="images/tower-bg.jpg">
       <source src="images/bg4 29 2 - converted with Clipchamp.mp4 " type="video/mp4 ">
     </video>
 
@@ -209,7 +209,7 @@
   </section>
 
   <!-- news section -->
-  <!-- <section class="newsSection ">
+  <!-- <section class="newsSection  wow  fadeInUp ">
     <div class="container ">
       <div class="row title-block ">
 
@@ -253,9 +253,8 @@
     </div>
   </section> -->
 
-  <section class="featuresSection " id="features-section-link ">
+  <section class="featuresSection  wow  fadeInUp" id="features-section-link ">
     <div class="container ">
-
       <!-- titles -->
       <div class="row title-block ">
         <h2 class="title col ">- Features</h2>
@@ -373,11 +372,11 @@
       </div>
 
       <div class="row align-items-center ">
-        <div class="col-12 col-md-6 ">
+        <div class="col-12 col-sm-6 ">
           <img class="img-fluid " src="./images/gadget.png " alt="gadget ">
         </div>
 
-        <div class="airapp col-12 col-md-6 ">
+        <div class="airapp col-12 col-sm-6 ">
           <h4>
             AirCraft App
           </h4>
@@ -411,7 +410,7 @@
 
     </div>
   </section>
-  <section class="icoSection " id="ico-section-link ">
+  <section class="icoSection  wow  fadeInUp" id="ico-section-link ">
     <div class="container ">
       <div class="row title-block ">
         <h2 class="title col ">- ICO</h2>
@@ -505,7 +504,7 @@
 
   <!-- end ico section -->
 
-  <section class="advantages ">
+  <section class="advantages  wow  fadeInUp">
     <div class="container ">
       <div class="row title-block ">
         <h2 class="title col ">- Advantages</h2>
@@ -559,7 +558,7 @@
   </section>
   <!-- /.advantages -->
 
-  <section class="roadmap " id="roadmap-section-link ">
+  <section class="roadmap  wow  fadeInUp" id="roadmap-section-link ">
     <svg class='hexagon1' viewBox="0 0 100 100 " version="1.1 " xmlns="http://www.w3.org/2000/svg ">
 
       <polygon stroke-width="3 " stroke-linejoin="round " stroke="#f4f7fe " points="50 1 95 25 95 75 50 99 5 75 5 25
@@ -806,7 +805,7 @@
   </section>
   <!-- /.roadmap -->
 
-  <section class="distribution ">
+  <section class="distribution  wow  fadeInUp">
     <div class="container ">
 
       <div class=" row title-block ">
@@ -849,7 +848,7 @@
   </section>
   <!-- /.distribution -->
 
-  <section class="directions ">
+  <section class="directions  wow  fadeInUp">
     <div class="container ">
       <div class="row title-block ">
 
@@ -897,7 +896,7 @@
 
   </section>
 
-  <section class="team ">
+  <section class="team  wow  fadeInUp">
     <div class="direction-join-btn ">
       <button class="join-action-btn " data-toggle="modal " data-target="#joinmodal ">JOIN</button>
     </div>
@@ -1558,7 +1557,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.2/js/mdb.min.js "></script>
   <script src="script/script.js "></script>
   <script src="script/jquery.countdown.min.js"></script>
-
+  <script src="script/wow.min.js"></script>
   <script>
     $(document).ready(function () {
       $(".hamburger").click(function () {
@@ -1578,6 +1577,12 @@
       var totalHours = event.offset.totalDays * 24 + event.offset.hours;
       $(this).html(event.strftime(`<span>${totalHours}:&nbsp</span> <span>%M:&nbsp</span><span>%S</span>`));
     });
+  </script>
+  <script>
+    new WOW({
+      mobile: !1,
+      live: false,
+    }).init();
   </script>
 </body>
 
