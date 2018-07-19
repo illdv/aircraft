@@ -36,16 +36,16 @@
       <div class="container-fluid">
         <!-- <div class="row  w-100 align-items-center"> -->
         <a class=" navbar-brand mr-auto " href="index.html#">
-          <img id="logo" src="images/logo.png">
+          <img id="logo" src="images/logo.png" alt='logo'>
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
           aria-expanded="false" aria-label="Toggle navigation">
-          <div class="hamburger" id="ham">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
+          <span class="hamburger" id="ham">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </span>
         </button>
 
         <!-- button end -->
@@ -80,8 +80,7 @@
           </ul>
         </div>
 
-        <!-- container end -->
-        <!-- </div> -->
+      </div>
     </nav>
 
     <!-- nav end -->
@@ -92,9 +91,9 @@
           <h2 class="icoStartTitle">
             ICO STARTS
           </h2>
-          <time id="icoStartCounter">
+          <div id="icoStartCounter">
 
-          </time>
+          </div>
 
 
           <p class="range-block">
@@ -116,8 +115,8 @@
 
           <p class="smartContractLink">
             Buy your tokens with BTC or ETH
-            <br>
-            <a href="index.html#">Smart-Contract</a>
+            <!-- <br>
+            <a href="index.html#">Smart-Contract</a> -->
 
           </p>
         </div>
@@ -129,28 +128,46 @@
       <ul class="social-links">
 
         <li class="social-link">
-          <a class="bitcoin-icon" href="index.html#" aria-label='link bitcoin'>
+          <a href="index.html#" aria-label='link bitcoin'>
+            <svg viewBox="0 0 816.74667 1146.88" width="38" height="48">
+              <path width="38" height="48" d="M 686.26675,253.25995 742.72793,100.913 645.9161,64.057807 589.90383,214.8492 515.37909,186.34567 571.39135,35.554268 477.64797,1.4583333e-5 422.53353,147.68027 C 356.76511,124.63501 290.60769,101.57442 224.85421,78.136431 l -39.50639,106.210909 79.14976,29.86583 c 0,0 40.72813,25.5979 24.2372,69.78568 -16.49094,44.18779 -154.98777,416.70367 -154.98777,416.70367 0,0 0.27255,44.06203 -37.760659,29.58321 C 57.953152,715.80692 16.836592,700.4199 16.836592,700.4199 l -62.436574,104.52024 193.249382,73.3023 -61.638965,165.51546 96.811805,36.8552 61.63895,-165.51549 71.84534,27.21797 -61.63881,165.51552 102.57427,39.0489 61.63895,-165.51552 c 8.7862,4.67285 153.19716,81.16292 280.45956,3.97716 59.43302,-35.80846 88.34626,-88.94608 100.28832,-116.00733 6.53946,-18.228 15.60733,-51.69562 9.36301,-92.45325 -12.21897,-78.35813 -71.77732,-121.21762 -83.94639,-129.17036 0,0 94.93635,-26.54251 127.03535,-112.19976 31.70983,-85.67253 -6.37692,-221.68785 -165.81404,-282.25099 z m -84.51382,520.95734 c -50.81955,137.23006 -303.64353,1.00857 -303.64353,1.00857 l 75.95989,-203.88923 c 0,0 278.50317,65.65059 227.68364,202.88066 z m 64.20272,-314.8743 C 621.64568,579.1305 410.13379,473.64302 410.13379,473.64302 l 72.50319,-194.97917 c 0,0 228.01782,60.90698 183.31867,180.67914 z"
+              />
+            </svg>
           </a>
 
         </li>
         <li class="social-link">
-          <a class="twitter-icon" href="index.html#" aria-label='link twitter'>
-          </a>
-        </li>
-        <li class="social-link ">
-          <a class="telegram-icon" href="index.html#" aria-label='link telegram'>
+          <a href="index.html#" aria-label='link twitter'>
+            <svg viewBox="0 0 48 40" width="48" height="40"> />
+              <path d="M 47.63897,7.4783558 C 45.732816,8.2079081 43.714068,8.6348106 41.647894,8.6349156 40.422596,6.3723062 38.37738,4.6661179 35.867125,4.1044287 31.049057,3.0263483 26.347802,6.5524415 25.344186,11.969495 25.204338,12.724331 25.14547,13.497286 25.175797,14.243956 17.961997,12.213627 12.288816,6.8748428 9.0507075,-1.6641674e-7 8.0099664,1.2931385 7.292485,2.8898214 6.9634309,4.6659043 6.3300015,8.0848643 7.317379,11.404065 9.3366276,13.705599 7.9277744,13.344117 6.6334465,12.59207 5.5991433,11.57451 l -0.024679,0.133207 c -0.88022,4.751021 1.3837449,9.373208 5.2193017,11.202544 C 10.02385,22.969201 9.2299,22.930281 8.4201398,22.749084 7.8533082,22.622251 7.3351907,22.460078 6.7930384,22.200037 7.1622943,26.352026 9.8748468,29.918519 13.67249,30.814515 10.191025,32.763833 6.1294934,33.519775 2.0402078,32.604766 1.3519119,32.450754 0.6313551,32.243281 0,32.009524 c 3.3280977,3.657982 7.647579,6.289241 12.546624,7.38544 16.03324,3.587563 27.591413,-9.410024 29.985282,-22.331028 0.08226,-0.444021 0.1563,-0.843639 0.198076,-1.296719 1.955512,-0.995966 3.774395,-2.392444 5.270018,-4.09247 -1.727105,0.445916 -3.477603,0.5629 -5.308432,0.430694 2.1415,-0.861863 3.871824,-2.4631296 4.947402,-4.6270852 z"
+              />
+            </svg>
           </a>
         </li>
         <li class="social-link">
-          <a  href="index.html#" aria-label='link facebook'>
-              <svg enable-background="new 0 0 207.3 177.9" viewBox="0 0 207.3 177.9"  width='75' height='75'>
-                <path  d="m152.6 136.3c0 2.9-2.4 5.3-5.3 5.3h-24.5v-37.2h12.5l1.9-14.5h-14.3v-9.3c0-4.2 1.2-7.1 7.2-7.1h7.7v-13c-1.3-0.2-5.9-0.6-11.2-0.6-11.1 0-18.6 6.8-18.6 19.2v10.9h-12.6v14.5h12.5v37.2h-46c-2.9 0-5.3-2.4-5.3-5.3v-85.5c0-2.9 2.4-5.3 5.3-5.3h85.4c2.9 0 5.3 2.4 5.3 5.3v85.4z"/>
-              </svg>
-              
+          <a href="index.html#" aria-label='link telegram'>
+            <svg viewBox="0 0 52 45" width="52" height="45"> />
+              <path d="M 0.92440972,21.594995 12.935161,26.046407 17.596049,40.86961 c 0.313714,0.934796 1.478936,1.290909 2.240812,0.667711 l 6.677619,-5.430723 c 0.717059,-0.578683 1.703017,-0.578683 2.420076,-0.08903 l 12.010751,8.724768 c 0.851509,0.578684 2.016731,0.133542 2.195996,-0.845768 L 51.970101,1.6971821 C 52.194182,0.62884411 51.118592,-0.30595289 50.087819,0.09467411 L 0.92440972,18.968662 c -1.254855,0.489655 -1.210039,2.181192 0,2.626333 z M 16.789357,23.687159 40.228247,9.3536109 c 0.403347,-0.267084 0.851509,0.311599 0.492979,0.623198 L 21.360613,27.826972 c -0.672244,0.623198 -1.120406,1.468966 -1.254855,2.403762 l -0.672243,4.85204 c -0.08963,0.667711 -0.985957,0.712226 -1.165222,0.08903 l -2.554526,-8.85831 c -0.224081,-0.979311 0.179265,-2.092164 1.07559,-2.626333 z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="social-link">
+          <a href="index.html#" aria-label='link facebook'>
+            <svg viewBox="0 0 43 43" width="43" height="43">
+              <path d="m 43,40.583764 c 0,1.297607 -1.075,2.37149 -2.37396,2.37149 l -10.97396,0 0,-16.645162 5.59896,0 0.85104,-6.488033 -6.4052,0 0,-4.16129 c 0,-1.879293 0.5375,-3.176898 3.225,-3.176898 l 3.44895,0 0,-5.816857 c -0.58229,-0.08949 -2.6427,-0.268471 -5.01666,-0.268471 -4.97188,0 -8.33125,3.042663 -8.33125,8.59105 l 0,4.877211 -5.64375,0 0,6.488033 5.59896,0 0,16.645163 -20.60417,0 C 1.07499,43 0,41.926118 0,40.62851 L 0,2.371488 C 0,1.073881 1.07499,0 2.37396,0 L 40.62604,0 C 41.925,0 43,1.073881 43,2.371488 l 0,38.212276 z"
+              />
+            </svg>
+
           </a>
         </li>
         <li class=" social-link">
-          <a class="email-icon" href="index.html# " aria-label='link email'>
+          <a href="index.html# " aria-label='link email'>
+            <svg width="46" height="32" viewBox="0 0 375.36 261.12">
+              <path width="46" height="32" d="m 187.20866,156.60195 -0.0803,0 c -2.83052,0 -5.62792,-0.85432 -7.89112,-2.40983 l -0.61394,-0.41024 c -0.1337,-0.0906 -0.27354,-0.17291 -0.41399,-0.27053 L 171.0591,147.3576 0.3938,0.85431042 C 0.74708,0.34709042 1.34876,4.182815e-7 1.98969,4.182815e-7 l 371.38376,0 c 0.4606,0 0.8881,0.1735400017185 1.2285,0.4651200017185 L 196.04921,153.55921 c -2.25031,1.93831 -5.4611,3.04274 -8.83994,3.04274 z m 188.15129,-135.84828 0,217.16455 L 247.44996,130.43016 375.35995,20.75367 Z M 127.77696,131.15751 0.00184,237.97565 l 0,-216.49463 127.77512,109.68287 z m 40.62515,34.86423 c 5.09372,4.34751 11.75632,6.74393 18.75319,6.74393 7.02324,0 13.67972,-2.38239 18.75993,-6.70947 l 29.29573,-25.13436 140.14599,117.75389 0,0.37452 c 0,1.11846 -0.9212,2.06975 -2.0093,2.06975 l -371.36537,0 C 0.91448,261.12 0,260.16871 0,259.04323 l 0,-0.34709 140.02945,-117.03929 28.37389,24.36298 z"
+              />
+            </svg>
+
           </a>
         </li>
       </ul>
@@ -162,11 +179,11 @@
 
 
     <video class="sm-video" autoplay loop poster="images/tower-sm.jpg">
-      <source src="images/bg4 29 2 - converted with Clipchamp.mp4 " type="video/mp4 ">
+      <source src="images/video.mp4 " type="video/mp4 ">
     </video>
 
     <video class="bg-video" autoplay loop poster="images/tower-bg.jpg">
-      <source src="images/bg4 29 2 - converted with Clipchamp.mp4 " type="video/mp4 ">
+      <source src="images/video.mp4 " type="video/mp4 ">
     </video>
 
 
@@ -256,7 +273,7 @@
     </div>
   </section> -->
 
-  <section class="featuresSection  wow  fadeInUp" id="features-section-link ">
+  <section class="featuresSection  wow  fadeInUp" id="features-section-link">
     <div class="container ">
       <!-- titles -->
       <div class="row title-block ">
@@ -267,7 +284,7 @@
       <div class="row features-gif-block align-self-center justify-content-center ">
 
         <div class="featuresCenter-mobile ">
-          <img height="310 " src="images/alltogether23.gif " loop=infinite>
+          <img src="images/alltogether23.gif" alt="gif img">
         </div>
 
         <div class="featuresLeft col-6 col-lg-4 ">
@@ -304,7 +321,10 @@
         <div class="col-3">
           <svg viewBox="0 0 410.6 352.4">
             <style type="text/css">
-              .ship-window{stroke:#ffffff; fill:#ffffff}
+              .ship-window {
+                stroke: #ffffff;
+                fill: #ffffff
+              }
             </style>
             <path d="m396.7 176.2c-1-1.7-2.8-2.7-4.8-2.7h-73.3c-2 0-3.9 1.1-4.9 2.8l-13.9 24.3h-6.4v-55.4c0-3.1-2.5-5.6-5.6-5.6h-93v-13.4c0-3.1-2.5-5.6-5.6-5.6h-16.6v-23c0-3.1-2.5-5.6-5.6-5.6h-29.2c-3.1 0-5.6 2.5-5.6 5.6v23h-41.5c-3.1 0-5.6 2.5-5.6 5.6v74.4h-9.2l-3.5-6.3c-1-1.8-2.9-2.9-4.9-2.9h-45.4c-1.9 0-3.7 1-4.7 2.6s-1.1 3.7-0.3 5.4l34.4 72.7c0.9 2 2.9 3.2 5.1 3.2h285.6c2 0 3.9-1.1 4.9-2.9l49.8-90.7c0.9-1.7 0.8-3.8-0.2-5.5zm-114.5-25.4v49.8h-87.4v-49.8h87.4zm-185.9-19h87.4v68.8h-87.4v-68.8zm-12.9 97.5c-4 0-7.3-3.3-7.3-7.3s3.3-7.3 7.3-7.3 7.3 3.3 7.3 7.3-3.3 7.3-7.3 7.3zm40.9 0c-4 0-7.3-3.3-7.3-7.3s3.3-7.3 7.3-7.3 7.3 3.3 7.3 7.3-3.3 7.3-7.3 7.3zm40.9 0c-4 0-7.3-3.3-7.3-7.3s3.3-7.3 7.3-7.3 7.3 3.3 7.3 7.3c-0.1 4-3.3 7.3-7.3 7.3zm40.9 0c-4 0-7.3-3.3-7.3-7.3s3.3-7.3 7.3-7.3 7.3 3.3 7.3 7.3c-0.1 4-3.3 7.3-7.3 7.3zm40.8 0c-4 0-7.3-3.3-7.3-7.3s3.3-7.3 7.3-7.3 7.3 3.3 7.3 7.3-3.2 7.3-7.3 7.3zm40.9 0c-4 0-7.3-3.3-7.3-7.3s3.3-7.3 7.3-7.3 7.3 3.3 7.3 7.3-3.3 7.3-7.3 7.3z"
               clip-path="url(#a)" fill="#fff" />
@@ -333,16 +353,21 @@
       <!-- insurancce -->
       <div class="row ship align-items-center ">
         <div class="col-3 ">
-          <svg enable-background="new 0 0 410.6 352.4" viewBox="0 0 410.6 352.4" >
+          <svg enable-background="new 0 0 410.6 352.4" viewBox="0 0 410.6 352.4">
             <style type="text/css">
-              .insurance{fill:#FFFFFF;}
+              .insurance {
+                fill: #FFFFFF;
+              }
             </style>
-                <path class="insurance" d="m204.4 124.2c-10.3 0-20.8 4.4-20.8 24h41.6c0-19.6-10.4-24-20.8-24z"/>
-                <path class="insurance" d="m214.8 170.3c0-5.7-4.6-10.2-10.3-10.2s-10.3 4.9-10.3 10.6c0 3.9 2.1 7.7 5.3 9.5l-3.1 22.6h16l-3.1-22.4c3.3-1.7 5.5-6.1 5.5-10.1z"/>
-                <path class="insurance" d="m267.1 73.1h-125s-9.5 16.7-22.6 18.2c-46.4 159.5 85 198.9 85.1 199 0.1 0 131.5-39.4 85.1-199-13.1-1.5-22.6-18.2-22.6-18.2zm-15.5 129.2c0 7.1-5 14.1-12 14.1h-70.4c-7.1 0-8.8-7.1-8.8-14.1v-44.8c0-7.1 1.8-9.3 8.8-9.3h4.8c0-21.3 12.8-33.6 30.4-33.6s30.4 12.3 30.4 33.6h4.8c7.1 0 12 2.2 12 9.3v44.8z"/>
-                <path class="insurance" d="m311.6 77.9l-1.2-4.2-4.9-0.6c-9.3-1.1-18.5-13.3-20.9-17.5l-2.1-3.5h-155.8l-2 3.5c-2.5 4.2-11.5 16.5-21 17.5l-4.9 0.6-1.2 4.2c-56.2 189.9 103.3 237.1 105 237.5l2.1 0.5 2.1-0.6c1.6-0.4 160.6-49 104.8-237.4zm-107 224.4c-19.2-6.5-140-54.7-93.9-217.5 12.1-3.6 20.8-14.2 24.8-19.9h138.2c4 5.7 12.7 16.3 24.8 19.9 46.1 162.8-74.7 211-93.9 217.5z"/>
-            </svg>
-            
+            <path class="insurance" d="m204.4 124.2c-10.3 0-20.8 4.4-20.8 24h41.6c0-19.6-10.4-24-20.8-24z" />
+            <path class="insurance" d="m214.8 170.3c0-5.7-4.6-10.2-10.3-10.2s-10.3 4.9-10.3 10.6c0 3.9 2.1 7.7 5.3 9.5l-3.1 22.6h16l-3.1-22.4c3.3-1.7 5.5-6.1 5.5-10.1z"
+            />
+            <path class="insurance" d="m267.1 73.1h-125s-9.5 16.7-22.6 18.2c-46.4 159.5 85 198.9 85.1 199 0.1 0 131.5-39.4 85.1-199-13.1-1.5-22.6-18.2-22.6-18.2zm-15.5 129.2c0 7.1-5 14.1-12 14.1h-70.4c-7.1 0-8.8-7.1-8.8-14.1v-44.8c0-7.1 1.8-9.3 8.8-9.3h4.8c0-21.3 12.8-33.6 30.4-33.6s30.4 14 30.4 33.6h4.8c7.1 0 12 2.2 12 9.3v44.8z"
+            />
+            <path class="insurance" d="m311.6 77.9l-1.2-4.2-4.9-0.6c-9.3-1.1-18.5-13.3-20.9-17.5l-2.1-3.5h-155.8l-2 3.5c-2.5 4.2-11.5 16.5-21 17.5l-4.9 0.6-1.2 4.2c-56.2 189.9 103.3 237.1 105 237.5l2.1 0.5 2.1-0.6c1.6-0.4 160.6-49 104.8-237.4zm-107 224.4c-19.2-6.5-140-54.7-93.9-217.5 12.1-3.6 20.8-14.2 24.8-19.9h138.2c4 5.7 12.7 16.3 24.8 19.9 46.1 162.8-74.7 211-93.9 217.5z"
+            />
+          </svg>
+
         </div>
 
         <div class="col-9 ">
@@ -378,7 +403,7 @@
     </div>
 
     <div class="coinflow ">
-      <img src="images/coin flow.gif">
+      <img src="images/coinflow.gif" alt='coin flow gif'>
     </div>
 
     <!-- end features section -->
@@ -401,7 +426,7 @@
         </div>
 
         <div class="offerImgSafary col-12 col-lg-6 ">
-          <img class="img-fluid " src="images/safary.png ">
+          <img class="img-fluid " src="images/safary.png" alt="safary img">
         </div>
 
       </div>
@@ -441,11 +466,11 @@
     </div>
     <div class="joinBtnBack ">
 
-      <button id="joinBtn2 " class="join-action-btn btn" data-toggle="modal" data-target="#joinmodal ">JOIN</button>
+      <button id="joinBtn2" class="join-action-btn btn" data-toggle="modal" data-target="#joinmodal ">JOIN</button>
 
     </div>
   </section>
-  <section class="icoSection  wow  fadeInUp" id="ico-section-link ">
+  <section class="icoSection  wow  fadeInUp" id="ico-section-link">
     <div class="container ">
       <div class="row title-block ">
         <h2 class="title col ">- ICO</h2>
@@ -477,7 +502,7 @@
         </dl>
 
         <div class="img-block col ">
-          <img class="img-fluid " src="images/money.png ">
+          <img class="img-fluid " src="images/money.png" alt="money images">
         </div>
       </div>
     </div>
@@ -593,13 +618,13 @@
   </section>
   <!-- /.advantages -->
 
-  <section class="roadmap  wow  fadeInUp" id="roadmap-section-link ">
-    <svg class='hexagon1' viewBox="0 0 100 100 " version="1.1 " xmlns="http://www.w3.org/2000/svg ">
+  <section class="roadmap  wow  fadeInUp" id="roadmap-section-link">
+    <svg class='hexagon1' viewBox="0 0 100 100 ">
 
       <polygon stroke-width="3 " stroke-linejoin="round " stroke="#f4f7fe " points="50 1 95 25 95 75 50 99 5 75 5 25
                 " fill="#f4f7fe " />
     </svg>
-    <svg class='hexagon2' viewBox="0 0 100 100 " version="1.1 " xmlns="http://www.w3.org/2000/svg ">
+    <svg class='hexagon2' viewBox="0 0 100 100 ">
 
       <polygon stroke-width="3 " stroke-linejoin="round " stroke="#f3f4f8 " points="50 1 95 25 95 75 50 99 5 75 5 25
                 " fill="#f3f4f8 " />
@@ -613,113 +638,10 @@
 
       <div class="row">
 
-        <svg class="roadmap-block" enable-background="new 0 0 600 350" version="1.1" viewBox="0 0 600 350" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+        <svg class="roadmap-block" enable-background="new 0 0 600 350" viewBox="0 0 600 350" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
           <style type="text/css">
-            .st0 {
-              fill: none;
-              stroke: #2956F2;
-              stroke-miterlimit: 10;
-            }
-
-            .st1 {
-              fill: none;
-              stroke: #000000;
-              stroke-miterlimit: 10;
-            }
-
-            .st2 {
-              fill: none;
-              stroke: #DD3636;
-              stroke-width: 2;
-              stroke-miterlimit: 10;
-            }
-
             .st3 {
               fill: #FFFFFF;
-            }
-
-            .st4 {
-              fill: none;
-              stroke: #DD3636;
-              stroke-miterlimit: 10;
-            }
-
-            .st5 {
-              fill: #DD3636;
-            }
-
-            .st6 {
-              fill: #FFFFFF;
-              stroke: #DD3636;
-              stroke-miterlimit: 10;
-            }
-
-            .st7 {
-              fill: #E2E2E2;
-            }
-
-            .st8 {
-              fill: none;
-              stroke: #D14A43;
-              stroke-miterlimit: 10;
-            }
-
-            .st9 {
-              fill: #D14A43;
-            }
-
-            .st10 {
-              fill: #FFFFFF;
-              stroke: #D14A43;
-              stroke-miterlimit: 10;
-            }
-
-            .st11 {
-              fill: #F6F7F7;
-            }
-
-            .st12 {
-              fill: #CA5A68;
-            }
-
-            .st13 {
-              fill: #333333;
-            }
-
-            .st14 {
-              fill: #FF3B30;
-            }
-
-            .st15 {
-              fill: #0083D5;
-            }
-
-            .st16 {
-              fill: #2956F2;
-              stroke: #2956F2;
-              stroke-width: 0.5;
-              stroke-miterlimit: 10;
-            }
-
-            .st17 {
-              fill: #FFFFFF;
-              stroke: #2956F2;
-              stroke-width: 0.5;
-              stroke-miterlimit: 10;
-            }
-
-            .st18 {
-              fill: #2956F2;
-            }
-
-            .st19 {
-              fill: #1838A5;
-            }
-
-            .st20 {
-              fill: none;
-              stroke: #EF2BBC;
-              stroke-miterlimit: 10;
             }
 
             .st21 {
@@ -741,68 +663,56 @@
             .st24 {
               fill: #201600;
             }
-
-            .st25 {
-              font-family: 'GothamPro';
-            }
-
-            .st26 {
-              font-size: 13.4332px;
-            }
-
-            .st27 {
-              font-size: 16.1229px;
-            }
           </style>
           <path class="st21" d="m543.5 147.8c-166.4 0.1-332.7 0.1-499.1 0.2" />
           <line class="st21" x1="67.1" x2="543" y1="42.4" y2="42.2" />
           <text class="st24 st25 st26" transform="translate(64.978 76.671)">January 2018</text>
-          <text class="st24 st25 st26" transform="translate(64.978 92.902)">- Concept</text>
+          <text class="tspan" class="st24 st25 st26" transform="translate(64.978 92.902)">- Concept</text>
           <text class="st24 st25 st26" transform="translate(192.93 76.671)">July 2018</text>
-          <text class="st24 st25 st26" transform="translate(192.93 92.903)">- Announce</text>
+          <text class="tspan" class="st24 st25 st26" transform="translate(192.93 92.903)">- Announce</text>
           <text class="st24 st25 st26" transform="translate(298.75 76.672)">August 2018</text>
           <text class="st24 st25 st26" transform="translate(298.75 92.903)">- Pre-ICO</text>
           <text class="st24 st25 st26" transform="translate(225.7 179.83)">Spring 2019</text>
           <text transform="translate(225.7 192.47)">
-            <tspan class="st24 st25 st26" x="0" y="0">- Payment system</tspan>
-            <tspan class="st24 st25 st26" x="0" y="12.3">- Support team</tspan>
+            <tspan class="st24 st25 st26" x="0" y="5">- Payment system</tspan>
+            <tspan class="st24 st25 st26" x="0" y="20">- Support team</tspan>
           </text>
           <text class="st24 st25 st26" transform="translate(64.978 179.96)">Q2 2019</text>
           <text transform="translate(64.978 192.6)">
-            <tspan class="st24 st25 st26" x="0" y="0">- Mobile app</tspan>
-            <tspan class="st24 st25 st26" x="0" y="12.3">- First offices</tspan>
-            <tspan class="st24 st25 st26" x="0" y="24.6">- Wallet</tspan>
+            <tspan class="st24 st25 st26" x="0" y="5">- Mobile app</tspan>
+            <tspan class="st24 st25 st26" x="0" y="20">- First offices</tspan>
+            <tspan class="st24 st25 st26" x="0" y="35">- Wallet</tspan>
           </text>
           <text class="st24 st25 st26" transform="translate(413.1 76.672)">Autumn 2018</text>
           <text transform="translate(413.1 92.903)">
-            <tspan class="st24 st25 st26" x="0" y="0">- ICO round 1</tspan>
-            <tspan class="st24 st25 st26" x="0" y="12.3">- Token creation</tspan>
+            <tspan class="st24 st25 st26" x="0" y="5">- ICO round 1</tspan>
+            <tspan class="st24 st25 st26" x="0" y="20">- Token creation</tspan>
           </text>
           <text class="st24 st25 st26" transform="translate(413.71 179.94)">Q1 2019</text>
           <text transform="translate(413.71 196.18)">
-            <tspan class="st24 st25 st26" x="0" y="0">- ICO round 2</tspan>
-            <tspan class="st24 st25 st26" x="0" y="12.3">- Platform launch</tspan>
+            <tspan class="st24 st25 st26" x="0" y="5">- ICO round 2</tspan>
+            <tspan class="st24 st25 st26" x="0" y="20">- Platform launch</tspan>
           </text>
           <path class="st21" d="m532.5 42.1h10.2c6.6 0 12 4.8 12 10.7v84.4c0 5.9-5.4 10.7-12 10.7h-18.2" />
           <path class="st21" d="M51.5,148H41.3c-6.6,0-12,4.8-12,10.7V243c0,5.9,5.4,10.7,12,10.7h18.2" />
           <line class="st21" x1="47.5" x2="553" y1="253.8" y2="253.6" />
           <text class="st24 st25 st26" transform="translate(64.978 286.49)">Q3-Q4 2019</text>
           <text transform="translate(64.978 299.13)">
-            <tspan class="st24 st25 st26" x="0" y="0">- 5000+ partners</tspan>
-            <tspan class="st24 st25 st26" x="0" y="12.3">- 10 offices</tspan>
-            <tspan class="st24 st25 st26" x="0" y="24.6">- AirBerry AI</tspan>
+            <tspan class="st24 st25 st26" x="0" y="5">- 5000+ partners</tspan>
+            <tspan class="st24 st25 st26" x="0" y="20">- 10 offices</tspan>
+            <tspan class="st24 st25 st26" x="0" y="35">- AirBerry AI</tspan>
           </text>
           <text class="st24 st25 st26" transform="translate(225.7 286.49)">HY1 2020</text>
           <text transform="translate(225.7 299.13)">
-            <tspan class="st24 st25 st26" x="0" y="0">- Plastic cards release</tspan>
-            <tspan class="st24 st25 st26" x="0" y="12.3">- AirBerry AI supports</tspan>
-            <tspan class="st24 st25 st26" x="0" y="24.6"> more languages</tspan>
+            <tspan class="st24 st25 st26" x="0" y="5">- Plastic cards release</tspan>
+            <tspan class="st24 st25 st26" x="0" y="20">- AirBerry AI supports</tspan>
+            <tspan class="st24 st25 st26" x="0" y="35"> more languages</tspan>
           </text>
           <text class="st24 st25 st26" transform="translate(413.1 286.49)">HY2 2020</text>
           <text transform="translate(413.1 299.13)">
-            <tspan class="st24 st25 st26" x="0" y="0">- Blockchain release</tspan>
-            <tspan class="st24 st25 st26" x="0" y="12.3">- Pos-mining launch</tspan>
-            <tspan class="st24 st25 st26" x="0" y="24.6">- Payment bracelets</tspan>
+            <tspan class="st24 st25 st26" x="0" y="5">- Blockchain release</tspan>
+            <tspan class="st24 st25 st26" x="0" y="20">- Pos-mining launch</tspan>
+            <tspan class="st24 st25 st26" x="0" y="35">- Payment bracelets</tspan>
           </text>
           <circle class="st22" cx="80.4" cy="42.1" r="15.5" />
           <text class="st3 st25 st27" transform="translate(77.983 48.062)">1</text>
@@ -899,35 +809,26 @@
         <div class="row ">
           <div class="col-sm-12 col-lg-4 direction-img ">
             <div class="img-left ">
-              <img src="images/asia.png ">
+              <img src="images/asia.png" alt="asia images">
             </div>
           </div>
 
           <div class="col-sm-12 col-lg-4 direction-img ">
             <div class="img-center ">
-              <img src="images/europe.png ">
+              <img src="images/europe.png" alt="europe images">
             </div>
           </div>
 
           <div class="col-sm-12 col-lg-4 direction-img ">
             <div class="img-right ">
-
-              <img src="images/america.png ">
+              <img src="images/america.png" lt="america images">
             </div>
           </div>
         </div>
       </div>
-
-
-
-
-
     </div>
 
-    <img class="img-web" src="images/web.png ">
-
-
-
+    <img class="img-web" src="images/web.png" alt="web images">
 
   </section>
 
@@ -938,7 +839,7 @@
     <!-- titles -->
     <div class="container ">
       <div class="row team-titles title-block ">
-        <h2 class="title col " id="team-section-link ">- Team</h2>
+        <h2 class="title col " id="team-section-link">- Team</h2>
         <span class="bigSmbl ">Team</span>
       </div>
 
@@ -946,7 +847,7 @@
 
       <div class="row photo-ceo justify-content-lg-start ">
         <div class="team-photo-item ">
-          <img src="images/stephencook.png ">
+          <img src="images/stephencook.png" alt="stephencook">
           <div class="short-info ">
             <dl>
               <dt>Stephen Cook</dt>
