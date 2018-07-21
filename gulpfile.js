@@ -61,6 +61,16 @@ gulp.task('serve', function () {
     .on('change', server.reload);
 });
 
+gulp.task('uncss', function () {
+  var plugins = [
+    uncss({
+      html: ['build/index.html'],
+    }),
+  ];
+  return gulp.src('build/css/style.css')
+    .pipe(postcss(plugins))
+    .pipe(gulp.dest('build/css'));
+});
 
 gulp.task('copy', function () {
   return gulp.src([
