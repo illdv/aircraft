@@ -460,6 +460,7 @@ li {
 .features-block {
   justify-content: space-between;
 }
+
 .features-text-block:nth-child(odd) {
   text-align: right;
 }
@@ -488,7 +489,7 @@ li {
   font-family: 'Gotham Pro Regular';
 }
 
-.offerSection > .container > .row {
+.offerSection>.container>.row {
   margin-bottom: 30px;
   &:last-child {
     margin-bottom: 0;
@@ -619,7 +620,7 @@ li {
 .icoDetails {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: 0;
   padding-right: 0;
 }
@@ -815,7 +816,7 @@ li {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 30px;
-  &:nth-child(n + 5) {
+  &:nth-child(n+5) {
     margin-bottom: 0;
   }
 }
@@ -1058,13 +1059,13 @@ li {
   }
 }
 
-.team-photo-item > img {
+.team-photo-item>img {
   width: 260px;
   height: 230px;
   object-fit: contain;
 }
 
-.team-block-item > img {
+.team-block-item>img {
   width: 198px;
   height: 198px;
 }
@@ -1392,7 +1393,7 @@ li {
   }
   .icoDetails dt {
     flex-basis: 33%;
-    font-size: 20px;
+    font-size: 22px;
   }
   .icoDetails dd {
     flex-basis: 67%;
@@ -1549,7 +1550,6 @@ li {
       text-align: center;
     }
   }
-
   .direction-join-btn {
     background-color: rgba(0, 1, 3, 0.2);
   }
@@ -1728,12 +1728,12 @@ li {
   .team {
     background-position: 150px 110px;
   }
-  .team-photo-item > img {
+  .team-photo-item>img {
     width: 240px;
     height: 210px;
     object-fit: contain;
   }
-  .team-block-item > img {
+  .team-block-item>img {
     width: 148px;
     height: 148px;
   }
